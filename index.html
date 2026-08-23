@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmotiCore | Powered by Emotion. Driven by AI.</title>
+    <meta name="description" content="EmotiCore is a premium AI-powered adaptive gaming platform that dynamically personalizes gameplay based on player emotions, stress, and fatigue in real-time.">
+    <meta name="keywords" content="AI Gaming, Emotion Detection, Adaptive Gaming, EmotiCore">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="landing">
+    <div id="splash-screen">
+
+    <img src="Dazzling Heart Logo with Circuit Patterns.png" alt="EmotiCore Logo">
+
+</div>
+
+    
+
+    <!-- Interactive Background Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Background Aurora Orbs -->
+    <div class="aurora-container" aria-hidden="true">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" role="banner">
+        <a href="index.html" class="logo-wrapper" aria-label="EmotiCore Home">
+            <div class="logo-pulse"></div>
+            <div class="logo-text">
+                <h2>EmotiCore</h2>
+                <span>Emotion Driven AI</span>
+            </div>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="primary-nav" role="navigation">
+            <a href="index.html" class="nav-item active">Home</a>
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="emotion-engine.html" class="nav-item">Emotion Engine</a>
+            <a href="game.html" class="nav-item">Game Arena</a>
+            <a href="analytics.html" class="nav-item">Analytics</a>
+            <a href="settings.html" class="nav-item">Settings</a>
+            <a href="game.html" class="nav-btn">Launch Arena</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        
+        <!-- Hero Section -->
+        <section class="hero-sec" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal-element revealed">
+                    
+                    <h1>Gaming That <span class="gradient-text">Feels You.</span></h1>
+                    <p>EmotiCore is a premium AI-powered adaptive gaming framework. By analyzing facial landmarks, ocular micro-tremors, and focus latency in real-time, our neural engine tailors layout difficulty, audio frequencies, and physics parameters to optimize your cognitive flow state.</p>
+                    <div class="hero-actions">
+                        <a href="dashboard.html" class="btn btn-primary">Start Experience</a>
+                        <a href="#features" class="btn btn-secondary">Explore Platform</a>
+                    </div>
+                </div>
+                
+                <div class="hero-mockup-wrapper reveal-element revealed">
+                    <div class="engine-status-hud glass">
+                        <div class="hud-title-bar">
+                            <div class="hud-dots" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="hud-label">EmotiCore Engine Core v2.4</span>
+                        </div>
+                        <div class="hud-stats-rows">
+                            <div class="hud-stat-row">
+                                <span class="hud-stat-name">Engine Status</span>
+                                <span class="hud-stat-val active-pulse">Active</span>
+                            </div>
+                            <div class="hud-stat-row">
+                                <span class="hud-stat-name">AI Confidence</span>
+                                <span class="hud-stat-val">97.8%</span>
+                            </div>
+                            <div class="hud-stat-row">
+                                <span class="hud-stat-name">Current State</span>
+                                <span class="hud-stat-val hud-emotion" style="color: var(--secondary);">😊 Balanced Flow</span>
+                            </div>
+                            <div class="hud-stat-row">
+                                <span class="hud-stat-name">Arena Session Score</span>
+                                <span class="hud-stat-val hud-score" style="font-family: monospace;">1240</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <div class="section-header reveal-element">
+                    <span class="section-badge">Platform Pillars</span>
+                    <h2>Cognitive Adaptive Mechanics</h2>
+                    <p>Designed to read user fatigue thresholds and real-time stress signals to rebuild game matrices on-the-fly.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="glass-card reveal-element">
+                        <div class="feature-icon">🎭</div>
+                        <h3>Emotion Recognition</h3>
+                        <p>High-fidelity neural net processing maps 68 face landmark points and ocular dilation rates via standard webcam sensors.</p>
+                    </div>
+                    <div class="glass-card reveal-element">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Adaptive Difficulty</h3>
+                        <p>Heuristics-driven game mechanics adjust velocities, obstacles, and sensory filters dynamically to sustain focus and prevent fatigue.</p>
+                    </div>
+                    <div class="glass-card reveal-element">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Live Telemetry Logs</h3>
+                        <p>Review real-time dashboard timelines, cognitive speeds, and detailed performance insights in unified, visual reports.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About EmotiCore Section -->
+        <section id="about">
+            <div class="container about-grid">
+                <div class="about-info reveal-element">
+                    <span class="section-badge">About Project</span>
+                    <h2>AI That Synchronizes with the Gamer</h2>
+                    <p>Modern gaming demands maximum focus, but scaling layouts often lead to player stress, fatigue, or cognitive disengagement. EmotiCore bridges this physiological gap by designing gameplay that acts as a physical extension of your central nervous state.</p>
+                    <p style="margin-top: 15px;">Whether entering hyper-focused Flow States or experiencing low-attention spans, our engine alters challenges to keep your mind stimulated at optimal wavelengths.</p>
+                </div>
+                <div class="about-graphics">
+                    <div class="glass-card about-mini-card reveal-element">
+                        <div class="val">12ms</div>
+                        <div class="lbl">Core Latency</div>
+                    </div>
+                    <div class="glass-card about-mini-card reveal-element">
+                        <div class="val">98%</div>
+                        <div class="lbl">Scan Precision</div>
+                    </div>
+                    <div class="glass-card about-mini-card reveal-element">
+                        <div class="val">3x</div>
+                        <div class="lbl">Flow Retention</div>
+                    </div>
+                    <div class="glass-card about-mini-card reveal-element">
+                        <div class="val">100%</div>
+                        <div class="lbl">Safe Play</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="workflow">
+            <div class="container">
+                <div class="section-header reveal-element">
+                    <span class="section-badge">How It Works</span>
+                    <h2>The Closed-Loop Feedback Flow</h2>
+                    <p>Discover how physiological triggers convert into game adjustments within milliseconds.</p>
+                </div>
+                <div class="workflow-grid">
+                    <div class="glass-card step-card reveal-element">
+                        <span class="step-num">01</span>
+                        <h3>Face & Ocular Mapping</h3>
+                        <p>Webcam frames feed face landmark matrices to determine facial muscle tension and pupil blinking intervals.</p>
+                    </div>
+                    <div class="glass-card step-card reveal-element">
+                        <span class="step-num">02</span>
+                        <h3>AI Risk Assessment</h3>
+                        <p>The core engine evaluates Stress and Fatigue ratios. Values exceeding 70% activate specialized response modules.</p>
+                    </div>
+                    <div class="glass-card step-card reveal-element">
+                        <span class="step-num">03</span>
+                        <h3>Canvas Matrix Re-tuning</h3>
+                        <p>The canvas adjusts obstacles speeds, player jump physics, and applies safety color overlays in real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why">
+            <div class="container">
+                <div class="section-header reveal-element">
+                    <span class="section-badge">Why EmotiCore</span>
+                    <h2>Built For Accessible Gaming Future</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="glass-card why-card reveal-element">
+                        <h3>⚡ Millisecond Refresh</h3>
+                        <p>AI heuristics execute inside local requestAnimationFrame loops for absolute lag-free runs.</p>
+                    </div>
+                    <div class="glass-card why-card reveal-element">
+                        <h3>🔒 Privacy Focused</h3>
+                        <p>All camera scans remain local on-device. Zero video frames are uploaded or saved to remote databases.</p>
+                    </div>
+                    <div class="glass-card why-card reveal-element">
+                        <h3>♿ Universal Design</h3>
+                        <p>Built with High Contrast modes and scalable layouts to accommodate every user's accessibility preferences.</p>
+                    </div>
+                    <div class="glass-card why-card reveal-element">
+                        <h3>🎮 Dynamic Visuals</h3>
+                        <p>Vibrant glassmorphic HUD status screens and ambient glowing filters adapt based on stress limits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta">
+            <div class="container">
+                <div class="glass cta-box reveal-element">
+                    <h2>Ready to Experience Adaptive Play?</h2>
+                    <p>Enter the game arena, calibrate the emotion engine sliders, and witness the future of gaming firsthand.</p>
+                    <a href="game.html" class="btn btn-primary">Launch Game Arena →</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-top container">
+            <div class="footer-logo-col">
+                <h3>🎮 EmotiCore</h3>
+                <p>Powered by Emotion. Driven by AI.</p>
+                <p style="font-size:0.8rem;color:var(--muted)">Emotion-Driven Gaming Experience</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="emotion-engine.html">Emotion Engine</a></li>
+                    <li><a href="game.html">Game Arena</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Developed By</h4>
+                <p>Team: <strong>Emotion Raiders</strong></p>
+                <p>Anupama Sethi</p>
+                <p>Rishika Ranjan</p>
+                <p>Karanveer Singh</p>
+
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2026 EmotiCore. All Rights Reserved.</p>
+            <p>Crafted with ❤️ by Team Emotion Raiders.</p>
+        </div>
+    </footer>
+    <!-- Splash Screen Script -->
+
+<script>
+
+window.onload = function(){
+
+    setTimeout(function(){
+
+        document.getElementById("splash-screen").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("splash-screen").style.display = "none";
+
+        },500);
+
+    },2000);
+
+}
+
+</script>
+    <!-- Script Import -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
