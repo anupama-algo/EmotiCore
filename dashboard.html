@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dashboard | EmotiCore Analytics HUD</title>
+    <meta name="description" content="View live physiological metrics, stress ratios, cognitive fatigue progress, and adaptive game recommendations in your EmotiCore Dashboard.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="global-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-brand">EMOTI<span>CORE</span></div>
+        </div>
+    </div>
+
+    <!-- Interactive Background Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Background Orbs -->
+    <div class="aurora-container" aria-hidden="true">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" role="banner">
+        <a href="index.html" class="logo-wrapper" aria-label="EmotiCore Home">
+            <div class="logo-pulse"></div>
+            <div class="logo-text">
+                <h2>EmotiCore</h2>
+                <span>Emotion Driven AI</span>
+            </div>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="primary-nav" role="navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="dashboard.html" class="nav-item active">Dashboard</a>
+            <a href="emotion-engine.html" class="nav-item">Emotion Engine</a>
+            <a href="game.html" class="nav-item">Game Arena</a>
+            <a href="analytics.html" class="nav-item">Analytics</a>
+            <a href="settings.html" class="nav-item">Settings</a>
+            <a href="game.html" class="nav-btn">Launch Arena</a>
+        </nav>
+    </header>
+
+    <!-- Main Workspace -->
+    <main role="main" style="padding-top: 130px; padding-bottom: 80px;">
+        <div class="container">
+            
+            <div class="dashboard-header-flex reveal-element revealed">
+                <div>
+                    <span class="section-badge">System Status</span>
+                    <h1 style="font-size: 2.5rem; line-height: 1.2;">Adaptive Core Dashboard</h1>
+                </div>
+                <div style="display:flex; gap:10px;">
+                    <a href="emotion-engine.html" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.88rem;">Calibrate Sensors</a>
+                    <a href="game.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.88rem;">Play Game Arena</a>
+                </div>
+            </div>
+
+            <!-- Stats and Widgets Grid -->
+            <div class="dashboard-grid">
+                
+                <!-- Left Main Panel: Core Metrics -->
+                <div class="reveal-element revealed">
+                    <h2 style="font-size: 1.4rem; margin-bottom: 20px; color: var(--white); font-weight: 500;">Live Emotion Overview</h2>
+                    
+                    <div class="dash-metrics-container">
+                        <!-- Stress Card -->
+                        <div class="glass-card metric-card" id="stress-metric-card">
+                            <div class="metric-header">
+                                <span class="metric-title">Stress Index</span>
+                                <span class="metric-icon">🔥</span>
+                            </div>
+                            <div class="metric-body">
+                                <div class="metric-val" id="dash-stress-val">45%</div>
+                                <div class="gauge-visual">
+                                    <div class="gauge-fill fill-stress" id="dash-stress-fill" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                            <div class="metric-footer focus-optimal" id="dash-stress-status">Optimal Flow State</div>
+                        </div>
+
+                        <!-- Fatigue Card -->
+                        <div class="glass-card metric-card" id="fatigue-metric-card">
+                            <div class="metric-header">
+                                <span class="metric-title">Cognitive Fatigue</span>
+                                <span class="metric-icon">⚡</span>
+                            </div>
+                            <div class="metric-body">
+                                <div class="metric-val" id="dash-fatigue-val">35%</div>
+                                <div class="gauge-visual">
+                                    <div class="gauge-fill fill-fatigue" id="dash-fatigue-fill" style="width: 35%;"></div>
+                                </div>
+                            </div>
+                            <div class="metric-footer focus-optimal" id="dash-fatigue-status">Excellent Focus</div>
+                        </div>
+
+                        <!-- Confidence Card -->
+                        <div class="glass-card metric-card">
+                            <div class="metric-header">
+                                <span class="metric-title">AI Confidence</span>
+                                <span class="metric-icon">🧠</span>
+                            </div>
+                            <div class="metric-body">
+                                <div class="metric-val" id="dash-confidence-val">96%</div>
+                                <div class="gauge-visual">
+                                    <div class="gauge-fill fill-confidence" id="dash-confidence-fill" style="width: 96%;"></div>
+                                </div>
+                            </div>
+                            <div class="metric-footer" style="color:var(--white)">Sensor Mapping Stable</div>
+                        </div>
+                    </div>
+
+                    <!-- Live Adaptive Recommendations -->
+                    <div class="glass-card recs-card">
+                        <h3 style="font-size: 1.25rem; font-weight: 500;">Live AI Action Engine</h3>
+                        <p style="font-size: 0.9rem;">Adaptive gameplay rules matching your real-time physiological indicators:</p>
+                        <div class="recs-list">
+                            <!-- Populated dynamically via script.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Panel: Diagnostics, Activities, Actions -->
+                <div style="display: flex; flex-direction: column; gap: 30px;" class="reveal-element revealed">
+                    
+                    <!-- Engine Speed circular widget -->
+                    <div class="glass-card engine-status-card">
+                        <h3 style="font-size: 1.2rem; font-weight: 500;">Heuristic Engine Speed</h3>
+                        <p style="font-size: 0.8rem; color: var(--muted);">Core evaluation ticks frequency</p>
+                        <div class="radial-gauge-container">
+                            <svg class="radial-svg" width="180" height="180" viewBox="0 0 180 180">
+                                <circle class="radial-bg" cx="90" cy="90" r="70" />
+                                <circle class="radial-progress" id="dash-engine-radial" cx="90" cy="90" r="70" />
+                            </svg>
+                            <div class="radial-text-inner">
+                                <div class="radial-num" id="dash-engine-speed">100</div>
+                                <div class="radial-unit">Hz</div>
+                            </div>
+                        </div>
+                        <span style="font-size: 0.85rem; color: var(--muted);">Adapts to cognitive overhead.</span>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="glass-card quick-actions-card">
+                        <h3 style="font-size: 1.2rem; font-weight: 500;">Arena Quick Actions</h3>
+                        <div class="actions-btn-grid">
+                            <a href="game.html" class="action-btn-link">
+                                <span>🎮 Play Game Session</span>
+                                <span>→</span>
+                            </a>
+                            <a href="emotion-engine.html" class="action-btn-link">
+                                <span>🎭 Calibrate Sliders</span>
+                                <span>→</span>
+                            </a>
+                            <a href="analytics.html" class="action-btn-link">
+                                <span>📈 View Analytics Charts</span>
+                                <span>→</span>
+                            </a>
+                            <a href="settings.html" class="action-btn-link">
+                                <span>⚙️ Settings & Credits</span>
+                                <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity Logs -->
+                    <div class="glass-card activity-card">
+                        <h3 style="font-size: 1.2rem; font-weight: 500;">Recent Sessions Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-details">
+                                    <div class="activity-bullet balanced"></div>
+                                    <div class="activity-desc">
+                                        <p>Standard Arena run (Flow Mode)</p>
+                                        <span>Avg Stress: 42% | Score: 980</span>
+                                    </div>
+                                </div>
+                                <div class="activity-time">2h ago</div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-details">
+                                    <div class="activity-bullet stress"></div>
+                                    <div class="activity-desc">
+                                        <p>Difficulty adapted run (Stress Mode)</p>
+                                        <span>Avg Stress: 74% | Score: 640</span>
+                                    </div>
+                                </div>
+                                <div class="activity-time">5h ago</div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-details">
+                                    <div class="activity-bullet balanced"></div>
+                                    <div class="activity-desc">
+                                        <p>Arena calibration session</p>
+                                        <span>Avg Fatigue: 30% | Score: 410</span>
+                                    </div>
+                                </div>
+                                <div class="activity-time">1d ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-top container">
+            <div class="footer-logo-col">
+                <h3>🎮 EmotiCore</h3>
+                <p>Powered by Emotion. Driven by AI.</p>
+                <p style="font-size:0.8rem;color:var(--muted)">Emotion-Driven Gaming Experience</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="emotion-engine.html">Emotion Engine</a></li>
+                    <li><a href="game.html">Game Arena</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Developed By</h4>
+                <p>Team: <strong>Emotion Raiders</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2026 EmotiCore. All Rights Reserved.</p>
+            <p>Crafted with ❤️ by Team Emotion Raiders.</p>
+        </div>
+    </footer>
+
+    <!-- Script Import -->
+    <script src="js/script.js"></script>
+</body>
+</html>
