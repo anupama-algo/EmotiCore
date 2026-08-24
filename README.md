@@ -1,11 +1,13 @@
 # EmotiCore
 
-### Powered by Emotion. Driven by AI.
+## Powered by Emotion. Driven by AI.
 
-## Team: Emotion Raiders
+EmotiCore is an AI-inspired emotion-adaptive gaming platform designed to create a more personalized and responsive gaming experience.
 
-### Team Members
+Instead of treating every player the same, EmotiCore explores how a player's emotional and cognitive state can influence the way a gaming experience is presented.
 
-* **Anupama Sethi**
-* **Rishika Ranjan**
-* **Karanveer Singh**
+## Team — Emotion Raiders
+
+* Anupama Sethi
+* Karanveer Singh
+* Rishika Ranjan
