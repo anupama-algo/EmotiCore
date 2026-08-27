@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Emotion Engine | EmotiCore Calibrations</title>
+    <meta name="description" content="Calibrate the EmotiCore Emotion Engine using camera inputs or interactive sliders. Monitor live facial landmark tracking coordinates and system logs.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="engine">
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="global-loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-brand">EMOTI<span>CORE</span></div>
+        </div>
+    </div>
+
+    <!-- Interactive Background Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Background Orbs -->
+    <div class="aurora-container" aria-hidden="true">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" role="banner">
+        <a href="index.html" class="logo-wrapper" aria-label="EmotiCore Home">
+            <div class="logo-pulse"></div>
+            <div class="logo-text">
+                <h2>EmotiCore</h2>
+                <span>Emotion Driven AI</span>
+            </div>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="primary-nav" role="navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="emotion-engine.html" class="nav-item active">Emotion Engine</a>
+            <a href="game.html" class="nav-item">Game Arena</a>
+            <a href="analytics.html" class="nav-item">Analytics</a>
+            <a href="settings.html" class="nav-item">Settings</a>
+            <a href="game.html" class="nav-btn">Launch Arena</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main" style="padding-top: 130px; padding-bottom: 80px;">
+        <div class="container">
+
+            <div class="dashboard-header-flex reveal-element revealed">
+                <div>
+                    <span class="section-badge">Calibrations HUD</span>
+                    <h1 style="font-size: 2.5rem; line-height: 1.2;">Emotion Scanner & Calibrator</h1>
+                </div>
+                <div>
+                    <a href="game.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">Sync Game Parameters</a>
+                </div>
+            </div>
+
+            <!-- Workspace Layout -->
+            <div class="engine-workspace">
+                
+                <!-- Left Column: Webcam HUD and console -->
+                <div style="display:flex; flex-direction:column; gap:25px;" class="reveal-element revealed">
+                    
+                    <!-- Webcam Feed Screen -->
+                    <div class="glass-card camera-feed-card">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 15px; color: var(--white); font-weight: 500;">Sensor Matrix Interface</h3>
+                        
+                        <div class="camera-feed-screen">
+                            <div class="scanning-anim-bar"></div>
+                            
+                            <div class="camera-live-overlay">
+                                <div>LIVE HUD OVERLAY: ACTIVE</div>
+                                <div style="text-align: right;">LANDMARKS: 68 POINTS</div>
+                            </div>
+                            
+                            <div class="hud-rects" id="hud-tracking-box"></div>
+                            
+                            <video id="webcam-feed-video" class="webcam-stream" autoplay playsinline muted></video>
+                            
+                            <canvas id="webcam-emulator-canvas" class="webcam-emulator-canvas"></canvas>
+                        </div>
+                        
+                        <div class="camera-controls-bar">
+                            <button id="toggle-webcam-btn" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.88rem;">Enable Webcam Feed</button>
+                            <span style="font-size: 0.8rem; color: var(--muted);">Uses local JavaScript canvas mapping hooks.</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Log Terminal console -->
+                    <div class="glass-card logs-card">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 10px; font-weight: 500;">Evaluation Pipeline Stream</h3>
+                        <div class="terminal-logs" id="live-engine-console">
+                            <!-- Populated dynamically via script.js -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Controls and Parameters -->
+                <div style="display:flex; flex-direction:column; gap:25px;" class="reveal-element revealed">
+                    
+                    <!-- Sliders panel -->
+                    <div class="glass-card sliders-card">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--white); font-weight: 500;">Manual Calibrator</h3>
+                        <p style="font-size: 0.88rem; margin-bottom: 25px;">Manually scale stress and fatigue variables below to calibrate the adaptive game physics engine rules.</p>
+                        
+                        <!-- Stress Slider -->
+                        <div class="slider-group">
+                            <div class="slider-info">
+                                <label for="stress-control">Stress Level Threshold</label>
+                                <span id="stress-val-hud">45%</span>
+                            </div>
+                            <input type="range" class="emotion-slider stress-slider" id="stress-control" min="0" max="100" value="45" step="1" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45" aria-label="Calibrate Stress Level">
+                            <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--muted); margin-top:4px;">
+                                <span>Balanced Flow</span>
+                                <span style="color:var(--primary)">Stress Trigger (>70%)</span>
+                            </div>
+                        </div>
+
+                        <!-- Fatigue Slider -->
+                        <div class="slider-group">
+                            <div class="slider-info">
+                                <label for="fatigue-control">Cognitive Fatigue</label>
+                                <span id="fatigue-val-hud">35%</span>
+                            </div>
+                            <input type="range" class="emotion-slider" id="fatigue-control" min="0" max="100" value="35" step="1" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35" aria-label="Calibrate Fatigue Level">
+                            <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--muted); margin-top:4px;">
+                                <span>Focused Focus</span>
+                                <span style="color:var(--warning)">Fatigue Trigger (>70%)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rule explanation panel -->
+                    <div class="glass-card">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 15px; font-weight: 500;">Active Heuristics Rules</h3>
+                        
+                        <div class="adapt-status-panel">
+                            <div>
+                                <span class="adapt-badge balanced" id="engine-adapt-badge">FLOW STATE</span>
+                            </div>
+                            <div style="font-size: 0.9rem; color: var(--white);" id="engine-adapt-desc">
+                                Game parameters operating at premium tailored defaults.
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 25px; display:flex; flex-direction:column; gap:16px; font-size:0.88rem;">
+                            <div style="display:flex; gap:12px; align-items:flex-start;">
+                                <span style="color:var(--primary); font-size:1.1rem; line-height:1;">●</span>
+                                <div>
+                                    <strong>Stress Overload Mitigation:</strong> If Stress exceeds 70%, the game canvas applies a crimson outline and slows runner obstacles speed down to prevent mental fatigue.
+                                </div>
+                            </div>
+                            <div style="display:flex; gap:12px; align-items:flex-start;">
+                                <span style="color:var(--warning); font-size:1.1rem; line-height:1;">●</span>
+                                <div>
+                                    <strong>Attention Booster Mode:</strong> If Cognitive Fatigue exceeds 70%, obstacles speeds accelerate and spawn intervals shrink by 35% to force cognitive stimulus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-top container">
+            <div class="footer-logo-col">
+                <h3>🎮 EmotiCore</h3>
+                <p>Powered by Emotion. Driven by AI.</p>
+               <p style="font-size:0.8rem;color:var(--muted)">Emotion-Driven Gaming Experience</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="emotion-engine.html">Emotion Engine</a></li>
+                    <li><a href="game.html">Game Arena</a></li>
+                    <li><a href="analytics.html">Analytics</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Developed By</h4>
+                <p>Team: <strong>Emotion Raiders</strong></p>
+                
+
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>© 2026 EmotiCore. All Rights Reserved.</p>
+            <p>Crafted with ❤️ by Team Emotion Raiders.</p>
+        </div>
+    </footer>
+
+    <!-- Script Import -->
+    <script src="js/script.js"></script>
+</body>
+</html>
