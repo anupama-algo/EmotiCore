@@ -1,0 +1,334 @@
+/* =========================================================
+   EMOTICORE - GLOBAL STYLES
+   ========================================================= */
+
+
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+
+:root {
+
+    /* Main Colors */
+    --primary-pink: #ed3b9b;
+    --primary-blue: #5789ff;
+    --primary-purple: #9b68ef;
+
+    /* Text */
+    --text-dark: #14213d;
+    --text-medium: #52617d;
+    --text-light: #7a849d;
+
+    /* Background */
+    --page-bg: #f8f9ff;
+    --white: #ffffff;
+
+    /* Soft Background Colors */
+    --pink-soft: #fff0f8;
+    --blue-soft: #edf5ff;
+    --purple-soft: #f3edff;
+    --green-soft: #edfff8;
+    --orange-soft: #fff4e7;
+
+    /* Borders */
+    --border-light: rgba(255, 255, 255, 0.88);
+    --border-input: #e1e4ef;
+
+    /* Glass */
+    --glass-bg: rgba(255, 255, 255, 0.72);
+    --glass-bg-strong: rgba(255, 255, 255, 0.82);
+
+    /* Shadows */
+    --shadow-small:
+        0 8px 25px rgba(70, 84, 135, 0.07);
+
+    --shadow-medium:
+        0 15px 40px rgba(70, 84, 135, 0.10);
+
+    --shadow-large:
+        0 22px 55px rgba(70, 84, 135, 0.13);
+
+    /* Radius */
+    --radius-small: 10px;
+    --radius-medium: 16px;
+    --radius-large: 22px;
+
+    /* Font */
+    --font-main: "Inter", sans-serif;
+}
+
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    font-family: var(--font-main);
+
+    color: var(--text-dark);
+
+    background:
+
+        radial-gradient(
+            circle at 5% 25%,
+            rgba(105, 189, 255, 0.13),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 95% 20%,
+            rgba(239, 101, 204, 0.13),
+            transparent 24%
+        ),
+
+        radial-gradient(
+            circle at 50% 80%,
+            rgba(157, 112, 241, 0.08),
+            transparent 30%
+        ),
+
+        var(--page-bg);
+
+    line-height: 1.5;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   COMMON ELEMENTS
+   ========================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   CONTAINER
+   ========================= */
+
+.header-container,
+.login-container,
+.footer-container,
+.footer-bottom {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   GLASS UTILITY
+   ========================= */
+
+.glass-surface {
+
+    background: var(--glass-bg);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid var(--border-light);
+
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+
+    outline: 3px solid rgba(87, 137, 255, 0.25);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   SELECTION
+   ========================= */
+
+::selection {
+    background: rgba(237, 59, 155, 0.18);
+    color: var(--text-dark);
+}
+
+/* =========================================================
+   EMOTICORE - GLOBAL STYLES
+   ========================================================= */
+
+:root {
+    --primary-pink: #ed3b9b;
+    --primary-blue: #5688ff;
+    --primary-purple: #9a68ee;
+    --primary-cyan: #64c8ff;
+
+    --text-dark: #14213d;
+    --text-medium: #52617d;
+    --text-light: #78849d;
+
+    --background: #f8f9ff;
+    --white: #ffffff;
+
+    --pink-soft: #fff0f8;
+    --blue-soft: #edf5ff;
+    --purple-soft: #f3edff;
+    --green-soft: #ecfff8;
+    --orange-soft: #fff4e6;
+
+    --border-light: rgba(255, 255, 255, 0.88);
+
+    --shadow-small:
+        0 8px 25px rgba(70, 84, 135, 0.07);
+
+    --shadow-medium:
+        0 15px 40px rgba(70, 84, 135, 0.10);
+
+    --shadow-large:
+        0 22px 55px rgba(70, 84, 135, 0.13);
+
+    --radius-small: 10px;
+    --radius-medium: 16px;
+    --radius-large: 22px;
+
+    --font-main: "Inter", sans-serif;
+}
+
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: var(--font-main);
+
+    color: var(--text-dark);
+
+    background:
+        radial-gradient(
+            circle at 4% 18%,
+            rgba(103, 192, 255, 0.14),
+            transparent 26%
+        ),
+        radial-gradient(
+            circle at 96% 15%,
+            rgba(235, 99, 206, 0.13),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 50% 62%,
+            rgba(165, 118, 242, 0.08),
+            transparent 30%
+        ),
+        var(--background);
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   COMMON CONTAINERS
+   ========================= */
+
+.header-container,
+.hero-container,
+.section-container,
+.stats-container,
+.cta-container,
+.footer-container,
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgba(86, 136, 255, 0.25);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   TEXT SELECTION
+   ========================= */
+
+::selection {
+    background: rgba(237, 59, 155, 0.18);
+    color: var(--text-dark);
+}

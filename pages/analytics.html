@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="EmotiCore gaming analytics showing emotional trends, performance, progress, AI insights and personalized recommendations."
+    >
+
+    <title>EmotiCore | Analytics</title>
+
+
+    <!-- ==========================================
+         GOOGLE FONT
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ==========================================
+         PROJECT CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+
+            <!-- ==========================
+                 BRAND
+            =========================== -->
+
+            <a
+                href="landing.html"
+                class="brand-logo"
+                aria-label="EmotiCore Home"
+            >
+
+                <div class="brand-logo-image">
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="EmotiCore Logo"
+                    >
+
+                </div>
+
+
+                <div class="brand-information">
+
+                    <h1>
+                        EmotiCore
+                    </h1>
+
+                    <p>
+                        Powered by
+                        <span>Emotion.</span>
+                        Driven by
+                        <span>AI.</span>
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ==========================
+                 NAVIGATION
+            =========================== -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Main Navigation"
+            >
+
+                <a
+                    href="landing.html"
+                    class="nav-link"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-link"
+                >
+                    Dashboard
+                </a>
+
+
+                <a
+                    href="emotion-engine.html"
+                    class="nav-link"
+                >
+                    Emotion Engine
+                </a>
+
+
+                <a
+                    href="game-library.html"
+                    class="nav-link"
+                >
+                    Game Arena
+                </a>
+
+
+                <a
+                    href="analytics.html"
+                    class="nav-link active"
+                    aria-current="page"
+                >
+                    Analytics
+                </a>
+
+
+                <a
+                    href="settings.html"
+                    class="nav-link"
+                >
+                    Settings
+                </a>
+
+            </nav>
+
+
+
+            <!-- ==========================
+                 BACK BUTTON
+            =========================== -->
+
+            <a
+                href="game-library.html"
+                class="analytics-back-button"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                <span>
+                    Back to Game Arena
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN ANALYTICS CONTENT
+    =================================================== -->
+
+    <main class="analytics-page">
+
+
+        <!-- ==================================================
+             ANALYTICS HERO
+        =================================================== -->
+
+        <section
+            class="analytics-hero"
+            aria-labelledby="analytics-title"
+        >
+
+            <div class="analytics-hero-content">
+
+
+                <div class="analytics-badge">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <span>
+                        Analytics
+                    </span>
+
+                </div>
+
+
+                <h2 id="analytics-title">
+
+                    Your Gaming
+                    <span>
+                        Analytics
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Track your progress, understand your
+                    emotions and unlock your full potential
+                    with AI-powered insights.
+
+                </p>
+
+            </div>
+
+
+            <!-- Decorative icons -->
+
+            <div
+                class="analytics-floating-icon analytics-game-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-gamepad"></i>
+
+            </div>
+
+
+            <div
+                class="analytics-floating-icon analytics-chart-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-chart-column"></i>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             GAMING OVERVIEW
+        =================================================== -->
+
+        <section
+            class="gaming-overview-section"
+            aria-labelledby="overview-title"
+        >
+
+            <div class="gaming-overview-card">
+
+
+                <!-- Overview header -->
+
+                <div class="overview-header">
+
+                    <div class="overview-heading">
+
+                        <div class="overview-icon">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="overview-title">
+                                Your Gaming Overview
+                            </h2>
+
+                            <p>
+                                A snapshot of your progress
+                                and emotional balance
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Time range -->
+
+                    <div
+                        class="time-filter"
+                        role="group"
+                        aria-label="Analytics time period"
+                    >
+
+                        <button
+                            type="button"
+                            class="time-filter-button active"
+                            id="analytics-7days"
+                        >
+                            7 Days
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="time-filter-button"
+                            id="analytics-30days"
+                        >
+                            30 Days
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="time-filter-button"
+                            id="analytics-alltime"
+                        >
+                            All Time
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Overview metrics -->
+
+                <div class="overview-metrics">
+
+
+                    <!-- Total Games -->
+
+                    <article class="overview-metric-card metric-pink">
+
+                        <div class="overview-metric-icon">
+
+                            <i class="fa-solid fa-gamepad"></i>
+
+                        </div>
+
+
+                        <div class="overview-metric-information">
+
+                            <span>
+                                Total Games Played
+                            </span>
+
+                            <strong id="total-games-played">
+                                12
+                            </strong>
+
+                            <small id="games-growth">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                20% vs last week
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Total Playtime -->
+
+                    <article class="overview-metric-card metric-purple">
+
+                        <div class="overview-metric-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+
+
+                        <div class="overview-metric-information">
+
+                            <span>
+                                Total Playtime
+                            </span>
+
+                            <strong id="total-playtime">
+                                2.4 hrs
+                            </strong>
+
+                            <small id="playtime-growth">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                15% vs last week
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Average Score -->
+
+                    <article class="overview-metric-card metric-blue">
+
+                        <div class="overview-metric-icon">
+
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+
+
+                        <div class="overview-metric-information">
+
+                            <span>
+                                Average Score
+                            </span>
+
+                            <strong id="average-score">
+                                8,450
+                            </strong>
+
+                            <small id="score-growth">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                12% vs last week
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Achievements -->
+
+                    <article class="overview-metric-card metric-green">
+
+                        <div class="overview-metric-icon">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                        </div>
+
+
+                        <div class="overview-metric-information">
+
+                            <span>
+                                Achievements
+                            </span>
+
+                            <strong id="total-achievements">
+                                8
+                            </strong>
+
+                            <small id="achievement-growth">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                2 vs last week
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             MAIN ANALYTICS CHARTS
+        =================================================== -->
+
+        <section class="analytics-charts-section">
+
+
+            <!-- ==================================================
+                 EMOTION TRENDS
+            =================================================== -->
+
+            <article
+                class="analytics-chart-card emotion-trends-card"
+                aria-labelledby="emotion-trends-title"
+            >
+
+                <div class="analytics-card-header">
+
+                    <div class="analytics-card-title">
+
+                        <div class="analytics-card-icon purple-card-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="emotion-trends-title">
+                                Emotion Trends
+                            </h2>
+
+                            <p>
+                                How your emotions change over time
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chart legend -->
+
+                    <div class="chart-legend">
+
+                        <span class="legend-focus">
+                            <i></i>
+                            Focus
+                        </span>
+
+                        <span class="legend-stress">
+                            <i></i>
+                            Stress
+                        </span>
+
+                        <span class="legend-engagement">
+                            <i></i>
+                            Engagement
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Chart area -->
+
+                <div
+                    class="emotion-trends-chart"
+                    id="emotion-trends-chart"
+                    aria-label="Emotion trends chart"
+                >
+
+                    <!--
+                        JavaScript will generate/update
+                        the chart here later.
+                    -->
+
+                    <div class="chart-y-axis">
+
+                        <span>100%</span>
+                        <span>75%</span>
+                        <span>50%</span>
+                        <span>25%</span>
+                        <span>0%</span>
+
+                    </div>
+
+
+                    <div class="chart-grid">
+
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+                        <div class="chart-grid-line"></div>
+
+                    </div>
+
+
+                    <div class="chart-placeholder">
+
+                        <span>Day 1</span>
+                        <span>Day 2</span>
+                        <span>Day 3</span>
+                        <span>Day 4</span>
+                        <span>Day 5</span>
+                        <span>Day 6</span>
+                        <span>Day 7</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 PERFORMANCE TREND
+            =================================================== -->
+
+            <article
+                class="analytics-chart-card performance-trend-card"
+                aria-labelledby="performance-trend-title"
+            >
+
+                <div class="analytics-card-header">
+
+                    <div class="analytics-card-title">
+
+                        <div class="analytics-card-icon pink-card-icon">
+
+                            <i class="fa-solid fa-rocket"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="performance-trend-title">
+                                Performance Trend
+                            </h2>
+
+                            <p>
+                                Your gaming performance over time
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="performance-chart"
+                    id="performance-chart"
+                    aria-label="Performance trend chart"
+                >
+
+                    <!--
+                        JavaScript will generate/update
+                        the performance bars later.
+                    -->
+
+                    <div class="performance-y-axis">
+
+                        <span>10,000</span>
+                        <span>8,000</span>
+                        <span>6,000</span>
+                        <span>4,000</span>
+                        <span>2,000</span>
+                        <span>0</span>
+
+                    </div>
+
+
+                    <div class="performance-bars">
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 1"
+                            data-score="4800"
+                        ></div>
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 2"
+                            data-score="6000"
+                        ></div>
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 3"
+                            data-score="7100"
+                        ></div>
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 4"
+                            data-score="8200"
+                        ></div>
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 5"
+                            data-score="9000"
+                        ></div>
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 6"
+                            data-score="9700"
+                        ></div>
+
+                        <div
+                            class="performance-bar"
+                            data-day="Day 7"
+                            data-score="8450"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="performance-x-axis">
+
+                        <span>Day 1</span>
+                        <span>Day 2</span>
+                        <span>Day 3</span>
+                        <span>Day 4</span>
+                        <span>Day 5</span>
+                        <span>Day 6</span>
+                        <span>Day 7</span>
+
+                    </div>
+
+
+                    <div class="current-score-label">
+
+                        <span>
+                            Score
+                        </span>
+
+                        <strong id="latest-score">
+                            8,450
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             LOWER ANALYTICS CARDS
+        =================================================== -->
+
+        <section class="analytics-lower-grid">
+
+
+            <!-- ==================================================
+                 EMOTION VS PERFORMANCE
+            =================================================== -->
+
+            <article
+                class="analytics-small-card emotion-performance-card"
+                aria-labelledby="emotion-performance-title"
+            >
+
+                <div class="analytics-card-header">
+
+                    <div class="analytics-card-title">
+
+                        <div class="analytics-card-icon pink-outline-icon">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="emotion-performance-title">
+                                Emotion vs Performance
+                            </h2>
+
+                            <p>
+                                How your emotions impact
+                                your gaming results
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="emotion-performance-chart"
+                    id="emotion-performance-chart"
+                >
+
+                    <!-- Chart labels -->
+
+                    <div class="scatter-y-label">
+                        Performance Score
+                    </div>
+
+                    <div class="scatter-axis-y">
+
+                        <span>100</span>
+                        <span>80</span>
+                        <span>60</span>
+                        <span>40</span>
+                        <span>20</span>
+                        <span>0</span>
+
+                    </div>
+
+
+                    <!-- Scatter points -->
+
+                    <div class="scatter-points">
+
+                        <span class="scatter-point point-1"></span>
+                        <span class="scatter-point point-2"></span>
+                        <span class="scatter-point point-3"></span>
+                        <span class="scatter-point point-4"></span>
+                        <span class="scatter-point point-5"></span>
+                        <span class="scatter-point point-6"></span>
+                        <span class="scatter-point point-7"></span>
+
+                    </div>
+
+
+                    <!-- Insight -->
+
+                    <div class="best-performance-callout">
+
+                        <strong>
+                            Best Performance
+                        </strong>
+
+                        <span>
+                            High Focus +
+                            <br>
+                            Low Stress
+                        </span>
+
+                    </div>
+
+
+                    <!-- X Axis -->
+
+                    <div class="scatter-axis-x">
+
+                        <span>0%</span>
+                        <span>20%</span>
+                        <span>40%</span>
+                        <span>60%</span>
+                        <span>80%</span>
+                        <span>100%</span>
+
+                    </div>
+
+                    <div class="scatter-x-label">
+                        Focus Level
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 MOST PLAYED GAMES
+            =================================================== -->
+
+            <article
+                class="analytics-small-card most-played-card"
+                aria-labelledby="most-played-title"
+            >
+
+                <div class="analytics-card-header">
+
+                    <div class="analytics-card-title">
+
+                        <div class="analytics-card-icon blue-outline-icon">
+
+                            <i class="fa-solid fa-gamepad"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="most-played-title">
+                                Most Played Games
+                            </h2>
+
+                            <p>
+                                Your favourite games
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="most-played-list">
+
+
+                    <!-- Game 1 -->
+
+                    <article
+                        class="played-game-item"
+                        data-rank="1"
+                    >
+
+                        <div class="game-rank">
+                            1
+                        </div>
+
+
+                        <img
+                            src="../assets/images/neon-runner.png"
+                            alt="Neon Runner"
+                        >
+
+
+                        <div class="played-game-information">
+
+                            <h3>
+                                Neon Runner
+                            </h3>
+
+                            <p>
+                                4 times played
+                            </p>
+
+                        </div>
+
+
+                        <strong>
+                            94%
+                        </strong>
+
+                    </article>
+
+
+
+                    <!-- Game 2 -->
+
+                    <article
+                        class="played-game-item"
+                        data-rank="2"
+                    >
+
+                        <div class="game-rank">
+                            2
+                        </div>
+
+
+                        <img
+                            src="../assets/images/mind-puzzle.png"
+                            alt="Mind Puzzle"
+                        >
+
+
+                        <div class="played-game-information">
+
+                            <h3>
+                                Mind Puzzle
+                            </h3>
+
+                            <p>
+                                3 times played
+                            </p>
+
+                        </div>
+
+
+                        <strong>
+                            88%
+                        </strong>
+
+                    </article>
+
+
+
+                    <!-- Game 3 -->
+
+                    <article
+                        class="played-game-item"
+                        data-rank="3"
+                    >
+
+                        <div class="game-rank">
+                            3
+                        </div>
+
+
+                        <img
+                            src="../assets/images/calm-quest.png"
+                            alt="Calm Quest"
+                        >
+
+
+                        <div class="played-game-information">
+
+                            <h3>
+                                Calm Quest
+                            </h3>
+
+                            <p>
+                                2 times played
+                            </p>
+
+                        </div>
+
+
+                        <strong>
+                            82%
+                        </strong>
+
+                    </article>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==================================================
+                 BEST PERFORMING GAME
+            =================================================== -->
+
+            <article
+                class="analytics-small-card best-game-card"
+                aria-labelledby="best-game-title"
+            >
+
+                <div class="analytics-card-header">
+
+                    <div class="analytics-card-title">
+
+                        <div class="analytics-card-icon purple-outline-icon">
+
+                            <i class="fa-solid fa-crown"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="best-game-title">
+                                Best Performing Game
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="top-pick-badge">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                        Top Pick
+
+                    </span>
+
+                </div>
+
+
+                <!-- Best game content -->
+
+                <div class="best-game-content">
+
+                    <img
+                        src="../assets/images/neon-runner.png"
+                        alt="Neon Runner"
+                        class="best-game-image"
+                    >
+
+
+                    <div class="best-game-information">
+
+                        <h3 id="best-game-name">
+                            Neon Runner
+                        </h3>
+
+                        <p>
+                            Your highest score
+                            and best focus level!
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Best game stats -->
+
+                <div class="best-game-stats">
+
+
+                    <div class="best-game-stat">
+
+                        <i class="fa-regular fa-star"></i>
+
+                        <strong id="best-match">
+                            94%
+                        </strong>
+
+                        <span>
+                            Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="best-game-stat">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                        <strong id="best-score">
+                            8,450
+                        </strong>
+
+                        <span>
+                            High Score
+                        </span>
+
+                    </div>
+
+
+                    <div class="best-game-stat">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <strong id="best-time">
+                            5:00
+                        </strong>
+
+                        <span>
+                            Avg Time
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             AI INSIGHTS
+        =================================================== -->
+
+        <section
+            class="ai-insights-section"
+            aria-labelledby="ai-insights-title"
+        >
+
+            <div class="ai-insights-card">
+
+
+                <!-- AI Header -->
+
+                <div class="ai-insights-header">
+
+                    <div class="ai-insights-heading">
+
+                        <div class="ai-insights-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h2 id="ai-insights-title">
+                                AI Insights
+                            </h2>
+
+                            <p>
+                                Personalized insights
+                                for your growth
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="powered-by-ai">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        Powered by Emotion AI
+
+                    </span>
+
+                </div>
+
+
+
+                <!-- AI content -->
+
+                <div class="ai-insights-grid">
+
+
+                    <!-- Key Insights -->
+
+                    <article class="key-insights-card">
+
+                        <h3>
+
+                            <i class="fa-regular fa-lightbulb"></i>
+
+                            Key Insights
+
+                        </h3>
+
+
+                        <ul id="key-insights-list">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Your focus is 18% higher during puzzle games.
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                You perform best when stress levels are below 30%.
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Your engagement increases with fast-paced challenges.
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                You show consistent improvement in reaction time.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+
+                    <!-- Growth Recommendation -->
+
+                    <article class="growth-recommendation-card">
+
+                        <div>
+
+                            <h3>
+
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+
+                                Growth Recommendation
+
+                            </h3>
+
+
+                            <p id="growth-recommendation">
+
+                                Try playing more relaxation games
+                                to maintain your calm state and
+                                further improve focus and memory.
+
+                            </p>
+
+                        </div>
+
+
+                        <a
+                            href="game-library.html"
+                            class="explore-games-button"
+                        >
+
+                            <span>
+                                Explore Games
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             BOTTOM CTA
+        =================================================== -->
+
+        <section class="analytics-cta-section">
+
+            <div class="analytics-cta-content">
+
+
+                <div class="analytics-cta-icon">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        Track Your Progress.
+                        Improve Your Game.
+                    </h2>
+
+                    <p>
+                        Let AI guide you to a smarter,
+                        calmer and more focused
+                        gaming experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="game-library.html"
+                class="analytics-cta-button"
+            >
+
+                <span>
+                    Back to Game Arena
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <!-- ==========================
+                 BRAND
+            =========================== -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="landing.html"
+                    class="footer-brand-logo"
+                >
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="EmotiCore Logo"
+                    >
+
+                    <span>
+                        EmotiCore
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Powered by
+                    <span>Emotion.</span><br>
+
+                    Driven by
+                    <span>AI.</span>
+                </p>
+
+
+                <div class="footer-social-links">
+
+                    <a
+                        href="#"
+                        aria-label="Discord"
+                    >
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                    >
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 QUICK LINKS
+            =========================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <a href="landing.html">
+                    Home
+                </a>
+
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+
+                <a href="emotion-engine.html">
+                    Emotion Engine
+                </a>
+
+
+                <a href="game-library.html">
+                    Game Arena
+                </a>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 RESOURCES
+            =========================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Resources
+                </h3>
+
+
+                <a href="#">
+                    Documentation
+                </a>
+
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+
+                <a href="#">
+                    Terms of Use
+                </a>
+
+
+                <a href="#">
+                    Support
+                </a>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 SUPPORT
+            =========================== -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+
+                <a href="#">
+                    Help Center
+                </a>
+
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+
+                <a href="#">
+                    Feedback
+                </a>
+
+
+                <a href="#">
+                    Report an Issue
+                </a>
+
+            </div>
+
+
+
+            <!-- ==========================
+                 STAY CONNECTED
+            =========================== -->
+
+            <div class="footer-column newsletter-column">
+
+                <h3>
+                    Stay Connected
+                </h3>
+
+
+                <p>
+                    Be the first to know about
+                    new updates & features.
+                </p>
+
+
+                <form
+                    action="#"
+                    method="post"
+                    class="newsletter-form"
+                >
+
+                    <input
+                        type="email"
+                        name="newsletter-email"
+                        placeholder="Enter your email"
+                        aria-label="Enter your email"
+                    >
+
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe"
+                    >
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EmotiCore.
+                All rights reserved.
+            </p>
+
+
+            <p>
+                Crafted with
+                <span>♥</span>
+                by Team Emotion Raiders
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

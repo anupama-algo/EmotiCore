@@ -1,0 +1,707 @@
+/* =========================================================
+   EMOTICORE - NAVBAR
+   ========================================================= */
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+
+    width: 100%;
+
+    position: relative;
+
+    z-index: 100;
+
+    padding: 14px 18px 0;
+}
+
+
+.header-container {
+
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 10px 20px;
+
+    background:
+        rgba(255, 255, 255, 0.78);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.92);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(72, 85, 135, 0.08);
+}
+
+
+/* =========================
+   BRAND
+   ========================= */
+
+.brand-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    flex-shrink: 0;
+}
+
+
+.brand-logo-image {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0fa,
+            #edf4ff
+        );
+}
+
+
+.brand-logo-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.brand-information h1 {
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    color: var(--text-dark);
+}
+
+
+.brand-information p {
+
+    margin-top: 3px;
+
+    font-size: 8px;
+
+    color: #7d87a1;
+}
+
+
+.brand-information p span:first-of-type {
+    color: var(--primary-pink);
+}
+
+
+.brand-information p span:last-of-type {
+    color: var(--primary-purple);
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.main-navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 28px;
+
+    flex: 1;
+}
+
+
+.nav-link {
+
+    position: relative;
+
+    padding: 12px 0;
+
+    color: #263451;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.nav-link:hover {
+
+    color: var(--primary-pink);
+}
+
+
+.nav-link.active {
+
+    color: var(--primary-pink);
+}
+
+
+.nav-link.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 3px;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary-pink),
+            var(--primary-blue)
+        );
+}
+
+
+/* =========================
+   BACK HOME
+   ========================= */
+
+.back-home-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5684ff
+        );
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.back-home-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.27);
+}
+
+
+/* =========================
+   NAVBAR MOBILE STATE
+   ========================= */
+
+.mobile-menu-button {
+    display: none;
+}
+
+/* =========================================================
+   EMOTICORE - NAVBAR
+   ========================================================= */
+
+.site-header {
+    width: 100%;
+
+    padding: 14px 12px 0;
+
+    position: relative;
+    z-index: 100;
+}
+
+
+.header-container {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    padding: 10px 20px;
+
+    background:
+        rgba(255, 255, 255, 0.80);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.92);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(72, 85, 135, 0.08);
+}
+
+
+/* =========================
+   BRAND
+   ========================= */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+
+    flex-shrink: 0;
+}
+
+
+.brand-logo-image {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff0fa,
+            #edf4ff
+        );
+}
+
+
+.brand-logo-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.brand-information h1 {
+    color: var(--text-dark);
+
+    font-size: 19px;
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+
+.brand-information p {
+    margin-top: 3px;
+
+    color: #7c87a2;
+
+    font-size: 8px;
+}
+
+
+.brand-information p span:first-of-type {
+    color: var(--primary-pink);
+}
+
+
+.brand-information p span:last-of-type {
+    color: var(--primary-purple);
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.main-navigation {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 29px;
+}
+
+
+.nav-link {
+    position: relative;
+
+    padding: 12px 0;
+
+    color: #263451;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.nav-link:hover {
+    color: var(--primary-pink);
+}
+
+
+.nav-link.active {
+    color: var(--primary-pink);
+}
+
+
+.nav-link.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 3px;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--primary-pink),
+            var(--primary-blue)
+        );
+}
+
+
+/* =========================
+   LAUNCH ARENA
+   ========================= */
+
+.launch-arena-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5686ff
+        );
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.launch-arena-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.28);
+}
+
+/* =========================================================
+   ANALYTICS NAVBAR BUTTON
+   ========================================================= */
+
+.analytics-back-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5686ff
+        );
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.analytics-back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.27);
+}
+
+/* =========================================================
+   GAME ARENA NAVBAR BUTTON
+   ========================================================= */
+
+.game-arena-back-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5686ff
+        );
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.game-arena-back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.28);
+}
+
+/* =========================================================
+   GAME SESSION NAVBAR BUTTON
+   ========================================================= */
+
+.game-session-back-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5686ff
+        );
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.game-session-back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.28);
+}
+
+/* =========================================================
+   SESSION SUMMARY NAVBAR BUTTON
+   ========================================================= */
+
+.session-summary-back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5686ff
+        );
+
+    font-size: 11px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.session-summary-back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.28);
+}
+
+
+/* =========================================================
+   EMOTION CALIBRATION NAVBAR BUTTON
+   ========================================================= */
+
+.calibration-back-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-radius: 13px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ed258f,
+            #5686ff
+        );
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 9px 22px rgba(100, 94, 230, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.calibration-back-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 13px 28px rgba(100, 94, 230, 0.28);
+}

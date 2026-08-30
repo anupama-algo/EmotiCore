@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="EmotiCore personal dashboard showing emotional state, AI recommendations, gameplay insights and recent activity."
+    >
+
+    <title>EmotiCore | Dashboard</title>
+
+
+    <!-- ==========================================
+         GOOGLE FONT
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ==========================================
+         PROJECT CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+
+            <!-- ==========================
+                 BRAND
+            =========================== -->
+
+            <a
+                href="landing.html"
+                class="brand-logo"
+                aria-label="EmotiCore Home"
+            >
+
+                <div class="brand-logo-image">
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="EmotiCore Logo"
+                    >
+
+                </div>
+
+
+                <div class="brand-information">
+
+                    <h1>
+                        EmotiCore
+                    </h1>
+
+                    <p>
+                        Powered by
+                        <span>Emotion.</span>
+                        Driven by
+                        <span>AI.</span>
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- ==========================
+                 NAVIGATION
+            =========================== -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Main Navigation"
+            >
+
+                <a
+                    href="landing.html"
+                    class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="dashboard.html"
+                    class="nav-link active"
+                    aria-current="page"
+                >
+                    Dashboard
+                </a>
+
+                <a
+                    href="emotion-engine.html"
+                    class="nav-link"
+                >
+                    Emotion Engine
+                </a>
+
+                <a
+                    href="game-library.html"
+                    class="nav-link"
+                >
+                    Game Arena
+                </a>
+
+                <a
+                    href="analytics.html"
+                    class="nav-link"
+                >
+                    Analytics
+                </a>
+
+                <a
+                    href="settings.html"
+                    class="nav-link"
+                >
+                    Settings
+                </a>
+
+            </nav>
+
+
+
+            <!-- ==========================
+                 LAUNCH ARENA BUTTON
+            =========================== -->
+
+            <a
+                href="game-library.html"
+                class="launch-arena-button"
+            >
+
+                <i class="fa-solid fa-gamepad"></i>
+
+                <span>
+                    Launch Arena
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN DASHBOARD
+    =================================================== -->
+
+    <main class="dashboard-page">
+
+
+        <!-- ==================================================
+             DASHBOARD INTRO
+        =================================================== -->
+
+        <section
+            class="dashboard-hero"
+            aria-labelledby="dashboard-title"
+        >
+
+            <div class="dashboard-hero-content">
+
+
+                <div class="dashboard-badge">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    <span>
+                        AI Calibration
+                    </span>
+
+                </div>
+
+
+                <h2 id="dashboard-title">
+
+                    Let's understand your
+
+                    <span>
+                        gaming state.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Our AI analyzes your emotional and
+                    cognitive signals to create a
+                    personalized gaming experience.
+
+                </p>
+
+            </div>
+
+
+            <!-- Decorative Gaming Icon -->
+
+            <div
+                class="dashboard-floating-icon dashboard-game-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-gamepad"></i>
+
+            </div>
+
+
+            <!-- Decorative Brain Icon -->
+
+            <div
+                class="dashboard-floating-icon dashboard-brain-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-brain"></i>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             CURRENT EMOTION
+        =================================================== -->
+
+        <section
+            class="current-emotion-section"
+            aria-labelledby="current-emotion-title"
+        >
+
+            <div class="current-emotion-card">
+
+
+                <!-- Card heading -->
+
+                <div class="emotion-card-title">
+
+                    <div class="emotion-title-left">
+
+                        <div class="emotion-title-icon">
+
+                            <i class="fa-solid fa-heart-pulse"></i>
+
+                        </div>
+
+                        <h2 id="current-emotion-title">
+                            Current Emotion
+                        </h2>
+
+                    </div>
+
+
+                    <div class="live-analysis-badge">
+
+                        <i></i>
+
+                        <span>
+                            Live Analysis
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Main Emotion Content -->
+
+                <div class="current-emotion-content">
+
+
+                    <!-- Gamer Image -->
+
+                    <div class="dashboard-character">
+
+                        <div
+                            class="character-glow"
+                            aria-hidden="true"
+                        ></div>
+
+
+                        <img
+                            src="../assets/images/hero-gamer.png"
+                            alt="EmotiCore player"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Current State -->
+
+                    <div class="emotion-state-content">
+
+
+                        <div class="emotion-state-icon">
+
+                            <i class="fa-solid fa-face-smile"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 id="dashboard-emotion">
+                                Balanced Flow
+                            </h3>
+
+
+                            <p id="dashboard-emotion-description">
+
+                                You're in the zone!
+                                A calm and focused state
+                                for the best gaming experience.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             EMOTION METRICS
+        =================================================== -->
+
+        <section
+            class="emotion-metrics-section"
+            aria-label="Current emotional metrics"
+        >
+
+
+            <!-- Focus -->
+
+            <article class="emotion-metric-card metric-focus">
+
+                <div class="metric-card-icon">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                </div>
+
+                <p>
+                    Focus
+                </p>
+
+                <strong id="dashboard-focus">
+                    78%
+                </strong>
+
+                <div class="metric-progress">
+
+                    <div
+                        class="metric-progress-fill"
+                        id="focus-progress"
+                    ></div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Stress -->
+
+            <article class="emotion-metric-card metric-stress">
+
+                <div class="metric-card-icon">
+
+                    <i class="fa-solid fa-fire"></i>
+
+                </div>
+
+                <p>
+                    Stress
+                </p>
+
+                <strong id="dashboard-stress">
+                    22%
+                </strong>
+
+                <div class="metric-progress">
+
+                    <div
+                        class="metric-progress-fill"
+                        id="stress-progress"
+                    ></div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Fatigue -->
+
+            <article class="emotion-metric-card metric-fatigue">
+
+                <div class="metric-card-icon">
+
+                    <i class="fa-solid fa-battery-quarter"></i>
+
+                </div>
+
+                <p>
+                    Fatigue
+                </p>
+
+                <strong id="dashboard-fatigue">
+                    18%
+                </strong>
+
+                <div class="metric-progress">
+
+                    <div
+                        class="metric-progress-fill"
+                        id="fatigue-progress"
+                    ></div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Engagement -->
+
+            <article class="emotion-metric-card metric-engagement">
+
+                <div class="metric-card-icon">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+                <p>
+                    Engagement
+                </p>
+
+                <strong id="dashboard-engagement">
+                    85%
+                </strong>
+
+                <div class="metric-progress">
+
+                    <div
+                        class="metric-progress-fill"
+                        id="engagement-progress"
+                    ></div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- AI Confidence -->
+
+            <article class="emotion-metric-card metric-confidence">
+
+                <div class="metric-card-icon">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+                <p>
+                    AI Confidence
+                </p>
+
+                <strong id="dashboard-confidence">
+                    92%
+                </strong>
+
+                <div class="metric-progress">
+
+                    <div
+                        class="metric-progress-fill"
+                        id="confidence-progress"
+                    ></div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             GAME + AI RECOMMENDATION
+        =================================================== -->
+
+        <section class="dashboard-recommendation-grid">
+
+
+            <!-- ==========================
+                 CURRENT / RECOMMENDED GAME
+            =========================== -->
+
+            <article class="recommended-game-card">
+
+                <div class="dashboard-card-header">
+
+                    <div class="card-heading-left">
+
+                        <div class="card-heading-icon blue-heading-icon">
+
+                            <i class="fa-solid fa-gamepad"></i>
+
+                        </div>
+
+                        <h2>
+                            Current / Recommended Game
+                        </h2>
+
+                    </div>
+
+
+                    <i
+                        class="fa-solid fa-wand-magic-sparkles heading-sparkle"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+
+                <div class="recommended-game-content">
+
+
+                    <!-- Game Image -->
+
+                    <div class="recommended-game-image">
+
+                        <img
+                            src="../assets/images/neon-runner.png"
+                            alt="Neon Runner game"
+                        >
+
+                    </div>
+
+
+                    <!-- Game Information -->
+
+                    <div class="recommended-game-info">
+
+                        <h3 id="recommended-game-name">
+                            Neon Runner
+                        </h3>
+
+
+                        <div class="game-tags">
+
+                            <span>
+                                Action
+                            </span>
+
+                            <span>
+                                Focus
+                            </span>
+
+                            <span>
+                                Reaction
+                            </span>
+
+                        </div>
+
+
+                        <p id="recommended-game-description">
+
+                            A fast-paced challenge to keep
+                            your mind sharp and engaged.
+
+                        </p>
+
+
+                        <a
+                            href="game-selection.html"
+                            class="play-game-button"
+                        >
+
+                            <span>
+                                Play Now
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ==========================
+                 AI RECOMMENDATION
+            =========================== -->
+
+            <article class="ai-recommendation-card">
+
+                <div class="dashboard-card-header">
+
+                    <div class="card-heading-left">
+
+                        <div class="card-heading-icon purple-heading-icon">
+
+                            <i class="fa-regular fa-lightbulb"></i>
+
+                        </div>
+
+                        <h2>
+                            AI Recommendation
+                        </h2>
+
+                    </div>
+
+
+                    <i
+                        class="fa-solid fa-wand-magic-sparkles heading-sparkle"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+
+                <div class="ai-recommendation-content">
+
+                    <div class="recommendation-icon">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+
+
+                    <p id="ai-recommendation-text">
+
+                        Since you're in a focused and
+                        balanced state, try a slightly
+                        faster-paced level in
+
+                        <strong>
+                            Neon Runner
+                        </strong>
+
+                        to boost your engagement!
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             PLAYER STATE + RECENT ACTIVITY
+        =================================================== -->
+
+        <section
+            class="player-state-section"
+            aria-labelledby="player-state-title"
+        >
+
+            <div class="player-state-card">
+
+
+                <!-- Card header -->
+
+                <div class="dashboard-card-header">
+
+                    <div class="card-heading-left">
+
+                        <div class="card-heading-icon chart-heading-icon">
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                        </div>
+
+                        <h2 id="player-state-title">
+                            Current Player State
+                        </h2>
+
+                    </div>
+
+
+                    <div class="adapting-badge">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                        <span>
+                            Adapting in Real-Time
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="player-state-content">
+
+
+                    <!-- ==========================
+                         STATE VISUALIZATION
+                    =========================== -->
+
+                    <div class="player-state-visual">
+
+
+                        <div class="radar-chart">
+
+                            <!-- 
+                                The JS developer can
+                                draw the actual chart
+                                here later.
+                            -->
+
+                            <div class="radar-shape radar-layer-one"></div>
+
+                            <div class="radar-shape radar-layer-two"></div>
+
+                            <div class="radar-shape radar-layer-three"></div>
+
+                            <div class="radar-data-shape"></div>
+
+
+                            <span class="radar-label radar-focus">
+                                Focus
+                            </span>
+
+                            <span class="radar-label radar-energy">
+                                Energy
+                            </span>
+
+                            <span class="radar-label radar-calm">
+                                Calm
+                            </span>
+
+                            <span class="radar-label radar-reaction">
+                                Reaction
+                            </span>
+
+                            <span class="radar-label radar-engagement">
+                                Engagement
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Divider -->
+
+                    <div class="state-divider"></div>
+
+
+
+                    <!-- ==========================
+                         RECENT ACTIVITY
+                    =========================== -->
+
+                    <div class="recent-activity">
+
+                        <div class="activity-heading">
+
+                            <div>
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <h3>
+                                    Recent Activity
+                                </h3>
+
+                            </div>
+
+
+                            <a href="session-history.html">
+                                View All
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="activity-list">
+
+
+                            <!-- Activity 1 -->
+
+                            <article class="activity-item">
+
+                                <div class="activity-indicator activity-blue">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                </div>
+
+
+                                <div class="activity-information">
+
+                                    <h4>
+                                        Played Neon Runner
+                                    </h4>
+
+                                    <p>
+                                        High focus • Balanced state
+                                    </p>
+
+                                </div>
+
+
+                                <time>
+                                    2 mins ago
+                                </time>
+
+                            </article>
+
+
+
+                            <!-- Activity 2 -->
+
+                            <article class="activity-item">
+
+                                <div class="activity-indicator activity-pink">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+
+
+                                <div class="activity-information">
+
+                                    <h4>
+                                        AI Analyzed Your State
+                                    </h4>
+
+                                    <p>
+                                        Balanced Flow detected
+                                    </p>
+
+                                </div>
+
+
+                                <time>
+                                    4 mins ago
+                                </time>
+
+                            </article>
+
+
+
+                            <!-- Activity 3 -->
+
+                            <article class="activity-item">
+
+                                <div class="activity-indicator activity-purple">
+                                    <i class="fa-solid fa-chart-column"></i>
+                                </div>
+
+
+                                <div class="activity-information">
+
+                                    <h4>
+                                        Personalized Recommendation
+                                    </h4>
+
+                                    <p>
+                                        Slightly higher challenge suggested
+                                    </p>
+
+                                </div>
+
+
+                                <time>
+                                    5 mins ago
+                                </time>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             START GAMING CTA
+        =================================================== -->
+
+        <section class="dashboard-cta-section">
+
+            <a
+                href="game-library.html"
+                class="dashboard-cta-button"
+            >
+
+                <i class="fa-solid fa-gamepad"></i>
+
+                <span>
+                    Start Your Gaming Journey
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <p class="dashboard-cta-tagline">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                Smart Games. Better You.
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="landing.html"
+                    class="footer-brand-logo"
+                >
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="EmotiCore Logo"
+                    >
+
+                    <span>
+                        EmotiCore
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Powered by
+                    <span>Emotion.</span><br>
+
+                    Driven by
+                    <span>AI.</span>
+                </p>
+
+
+                <div class="footer-social-links">
+
+                    <a
+                        href="#"
+                        aria-label="Discord"
+                    >
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                    >
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="landing.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="emotion-engine.html">
+                    Emotion Engine
+                </a>
+
+                <a href="game-library.html">
+                    Game Arena
+                </a>
+
+            </div>
+
+
+
+            <!-- Resources -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Resources
+                </h3>
+
+                <a href="#">
+                    Documentation
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms of Use
+                </a>
+
+                <a href="#">
+                    Support
+                </a>
+
+            </div>
+
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    Feedback
+                </a>
+
+                <a href="#">
+                    Report an Issue
+                </a>
+
+            </div>
+
+
+
+            <!-- Newsletter -->
+
+            <div class="footer-column newsletter-column">
+
+                <h3>
+                    Stay Connected
+                </h3>
+
+                <p>
+                    Be the first to know about
+                    new updates & features.
+                </p>
+
+
+                <form
+                    action="#"
+                    method="post"
+                    class="newsletter-form"
+                >
+
+                    <input
+                        type="email"
+                        name="newsletter-email"
+                        placeholder="Enter your email"
+                        aria-label="Email address"
+                    >
+
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe"
+                    >
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EmotiCore.
+                All rights reserved.
+            </p>
+
+
+            <p>
+                Crafted with
+                <span>♥</span>
+                by Team Emotion Raiders
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

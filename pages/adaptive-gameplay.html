@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="EmotiCore adaptive gameplay session with real-time emotion adaptation and player state monitoring."
+    >
+
+    <title>EmotiCore | Neon Runner</title>
+
+
+    <!-- ==========================================
+         GOOGLE FONT
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ==========================================
+         PROJECT CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+    =================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+
+            <!-- Brand -->
+
+            <a
+                href="landing.html"
+                class="brand-logo"
+                aria-label="EmotiCore Home"
+            >
+
+                <div class="brand-logo-image">
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="EmotiCore Logo"
+                    >
+
+                </div>
+
+
+                <div class="brand-information">
+
+                    <h1>
+                        EmotiCore
+                    </h1>
+
+                    <p>
+                        Powered by
+                        <span>Emotion.</span>
+                        Driven by
+                        <span>AI.</span>
+                    </p>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- Navigation -->
+
+            <nav
+                class="main-navigation"
+                aria-label="Main Navigation"
+            >
+
+                <a
+                    href="landing.html"
+                    class="nav-link"
+                >
+                    Home
+                </a>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-link"
+                >
+                    Dashboard
+                </a>
+
+
+                <a
+                    href="emotion-engine.html"
+                    class="nav-link"
+                >
+                    Emotion Engine
+                </a>
+
+
+                <a
+                    href="game-library.html"
+                    class="nav-link active"
+                    aria-current="page"
+                >
+                    Game Arena
+                </a>
+
+
+                <a
+                    href="analytics.html"
+                    class="nav-link"
+                >
+                    Analytics
+                </a>
+
+
+                <a
+                    href="settings.html"
+                    class="nav-link"
+                >
+                    Settings
+                </a>
+
+            </nav>
+
+
+
+            <!-- Back -->
+
+            <a
+                href="game-library.html"
+                class="game-session-back-button"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                <span>
+                    Back to Arena
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN GAME SESSION
+    =================================================== -->
+
+    <main class="adaptive-gameplay-page">
+
+
+        <!-- ==================================================
+             GAME SESSION HERO
+        =================================================== -->
+
+        <section
+            class="game-session-hero"
+            aria-labelledby="game-session-title"
+        >
+
+            <div class="game-session-hero-content">
+
+
+                <!-- Badge -->
+
+                <div class="game-session-badge">
+
+                    <i class="fa-solid fa-gamepad"></i>
+
+                    <span>
+                        Game Session
+                    </span>
+
+                </div>
+
+
+
+                <!-- Title -->
+
+                <h2 id="game-session-title">
+
+                    Neon
+                    <span>
+                        Runner
+                    </span>
+
+                </h2>
+
+
+
+                <!-- Description -->
+
+                <p>
+
+                    Dash through neon worlds and test
+                    your reflexes and focus.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Decorative icons -->
+
+            <div
+                class="game-session-floating-icon game-session-game-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-gamepad"></i>
+
+            </div>
+
+
+            <div
+                class="game-session-floating-icon game-session-rocket-icon"
+                aria-hidden="true"
+            >
+
+                <i class="fa-solid fa-rocket"></i>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             GAME + SIDEBAR
+        =================================================== -->
+
+        <section class="game-session-layout">
+
+
+            <!-- ==================================================
+                 GAME AREA
+            =================================================== -->
+
+            <div class="game-session-main-column">
+
+
+                <!-- Game Card -->
+
+                <article
+                    class="game-screen-card"
+                    aria-label="Neon Runner game"
+                >
+
+
+                    <!-- Game Header -->
+
+                    <div class="game-screen-header">
+
+                        <div class="game-screen-title">
+
+                            <div class="game-screen-icon">
+
+                                <i class="fa-solid fa-gamepad"></i>
+
+                            </div>
+
+
+                            <h2>
+                                Neon Runner
+                            </h2>
+
+
+                            <div class="game-tags">
+
+                                <span>
+                                    Action
+                                </span>
+
+                                <span>
+                                    Focus
+                                </span>
+
+                                <span>
+                                    Reaction
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="game-difficulty-badge">
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                            <span>
+                                Moderate
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ==================================================
+                         CANVAS / GAME VIEW
+                    =================================================== -->
+
+                    <div class="game-canvas-wrapper">
+
+
+                        <!-- Actual game canvas -->
+
+                        <canvas
+                            id="game-canvas"
+                            width="900"
+                            height="500"
+                            aria-label="Neon Runner game canvas"
+                        ></canvas>
+
+
+
+                        <!-- Game HUD -->
+
+                        <div class="game-hud">
+
+
+                            <!-- Lives -->
+
+                            <div
+                                class="game-lives"
+                                id="game-lives"
+                            >
+
+                                <i class="fa-solid fa-heart"></i>
+
+                                <span id="game-lives-value">
+                                    3
+                                </span>
+
+                            </div>
+
+
+
+                            <!-- Score -->
+
+                            <div class="game-score">
+
+                                <span>
+                                    Score
+                                </span>
+
+                                <strong id="game-score-value">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Start overlay -->
+
+                        <div
+                            class="game-start-overlay"
+                            id="game-start-overlay"
+                        >
+
+                            <button
+                                type="button"
+                                class="game-start-button"
+                                id="start-game-button"
+                            >
+
+                                <i class="fa-solid fa-play"></i>
+
+                                <span>
+                                    Start Game
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- Pause overlay -->
+
+                        <div
+                            class="game-pause-overlay"
+                            id="game-pause-overlay"
+                            hidden
+                        >
+
+                            <div class="game-pause-content">
+
+                                <i class="fa-solid fa-pause"></i>
+
+                                <h3>
+                                    Game Paused
+                                </h3>
+
+                                <p>
+                                    Press resume to continue.
+                                </p>
+
+
+                                <button
+                                    type="button"
+                                    class="resume-game-button"
+                                    id="resume-game-button"
+                                >
+
+                                    <i class="fa-solid fa-play"></i>
+
+                                    Resume
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Game over overlay -->
+
+                        <div
+                            class="game-over-overlay"
+                            id="game-over-overlay"
+                            hidden
+                        >
+
+                            <div class="game-over-content">
+
+                                <i class="fa-solid fa-trophy"></i>
+
+                                <h3>
+                                    Game Over
+                                </h3>
+
+                                <p>
+                                    Your final score:
+                                </p>
+
+                                <strong id="final-score">
+                                    0
+                                </strong>
+
+
+                                <button
+                                    type="button"
+                                    class="restart-game-overlay-button"
+                                    id="restart-game-overlay-button"
+                                >
+
+                                    <i class="fa-solid fa-rotate-right"></i>
+
+                                    Play Again
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ==================================================
+                     GAME SESSION STATS
+                =================================================== -->
+
+                <section
+                    class="game-session-stats"
+                    aria-label="Game session statistics"
+                >
+
+
+                    <!-- Time -->
+
+                    <article class="session-stat">
+
+                        <div class="session-stat-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Time
+                            </span>
+
+                            <strong id="game-timer">
+                                05:00
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Score -->
+
+                    <article class="session-stat">
+
+                        <div class="session-stat-icon">
+
+                            <i class="fa-regular fa-star"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Score
+                            </span>
+
+                            <strong id="session-score">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Level -->
+
+                    <article class="session-stat">
+
+                        <div class="session-stat-icon">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Level
+                            </span>
+
+                            <strong id="game-level">
+                                1 / 5
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Lives -->
+
+                    <article class="session-stat">
+
+                        <div class="session-stat-icon">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Lives
+                            </span>
+
+                            <strong id="session-lives">
+                                3
+                            </strong>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     GAME CONTROLS
+                =================================================== -->
+
+                <section
+                    class="game-controls-section"
+                    aria-labelledby="game-controls-title"
+                >
+
+                    <div class="game-section-heading">
+
+                        <div class="game-screen-icon">
+
+                            <i class="fa-solid fa-gamepad"></i>
+
+                        </div>
+
+
+                        <h2 id="game-controls-title">
+                            Game Controls
+                        </h2>
+
+                    </div>
+
+
+
+                    <div class="game-controls-grid">
+
+
+                        <!-- Movement -->
+
+                        <article class="control-card">
+
+                            <div class="control-icon movement-control">
+
+                                <i class="fa-solid fa-arrows-up-down-left-right"></i>
+
+                            </div>
+
+
+                            <h3>
+                                Arrow Keys /
+                                <br>
+                                Swipe
+                            </h3>
+
+
+                            <p>
+                                Move Left / Right
+                            </p>
+
+                        </article>
+
+
+
+                        <!-- Jump -->
+
+                        <article class="control-card">
+
+                            <div class="control-icon jump-control">
+
+                                <i class="fa-solid fa-arrow-up"></i>
+
+                            </div>
+
+
+                            <h3>
+                                Jump
+                            </h3>
+
+
+                            <p>
+                                (Avoid Obstacles)
+                            </p>
+
+                        </article>
+
+
+
+                        <!-- Pause -->
+
+                        <article class="control-card">
+
+                            <div class="control-icon pause-control">
+
+                                <i class="fa-solid fa-pause"></i>
+
+                            </div>
+
+
+                            <h3>
+                                Space / P
+                            </h3>
+
+
+                            <p>
+                                Pause Game
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 RIGHT SIDEBAR
+            =================================================== -->
+
+            <aside class="game-session-sidebar">
+
+
+                <!-- ==================================================
+                     PLAYER STATE
+                =================================================== -->
+
+                <section
+                    class="game-sidebar-card player-state-card"
+                    aria-labelledby="session-player-state"
+                >
+
+                    <div class="game-sidebar-header">
+
+                        <div class="game-sidebar-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <h2 id="session-player-state">
+                            Current Player State
+                        </h2>
+
+                    </div>
+
+
+
+                    <!-- State -->
+
+                    <div class="sidebar-current-state">
+
+                        <div class="sidebar-state-icon">
+
+                            <i class="fa-solid fa-face-smile"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 id="session-emotion">
+                                Balanced Flow
+                            </h3>
+
+                            <p id="session-emotion-description">
+                                Focused and ready for
+                                the challenge!
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Focus -->
+
+                    <div class="sidebar-emotion-metric">
+
+                        <div class="sidebar-metric-label">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                            <span>
+                                Focus
+                            </span>
+
+                        </div>
+
+
+                        <div class="sidebar-progress">
+
+                            <div
+                                class="sidebar-progress-fill focus-session-fill"
+                                id="session-focus-progress"
+                            ></div>
+
+                        </div>
+
+
+                        <strong id="session-focus">
+                            78%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- Stress -->
+
+                    <div class="sidebar-emotion-metric">
+
+                        <div class="sidebar-metric-label">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                            <span>
+                                Stress
+                            </span>
+
+                        </div>
+
+
+                        <div class="sidebar-progress">
+
+                            <div
+                                class="sidebar-progress-fill stress-session-fill"
+                                id="session-stress-progress"
+                            ></div>
+
+                        </div>
+
+
+                        <strong id="session-stress">
+                            22%
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- Engagement -->
+
+                    <div class="sidebar-emotion-metric">
+
+                        <div class="sidebar-metric-label">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                            <span>
+                                Engagement
+                            </span>
+
+                        </div>
+
+
+                        <div class="sidebar-progress">
+
+                            <div
+                                class="sidebar-progress-fill engagement-session-fill"
+                                id="session-engagement-progress"
+                            ></div>
+
+                        </div>
+
+
+                        <strong id="session-engagement">
+                            85%
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     AI ADAPTATION STATUS
+                =================================================== -->
+
+                <section
+                    class="game-sidebar-card adaptation-status-card"
+                    aria-labelledby="adaptation-status-title"
+                >
+
+                    <div class="game-sidebar-header">
+
+                        <div class="game-sidebar-icon">
+
+                            <i class="fa-solid fa-robot"></i>
+
+                        </div>
+
+
+                        <h2 id="adaptation-status-title">
+                            AI Adaptation Status
+                        </h2>
+
+                    </div>
+
+
+                    <p class="adaptation-monitoring-text">
+                        AI is monitoring your state.
+                    </p>
+
+
+
+                    <div class="adaptation-status-list">
+
+
+                        <div class="adaptation-status-row">
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                            <span>
+                                Difficulty:
+                            </span>
+
+                            <strong id="game-difficulty">
+                                Moderate
+                            </strong>
+
+                        </div>
+
+
+                        <div class="adaptation-status-row">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                            <span>
+                                Speed:
+                            </span>
+
+                            <strong id="game-speed">
+                                Balanced
+                            </strong>
+
+                        </div>
+
+
+                        <div class="adaptation-status-row">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                            <span>
+                                Challenge:
+                            </span>
+
+                            <strong id="game-challenge">
+                                Medium
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ==================================================
+                     EMOTION INSIGHTS
+                =================================================== -->
+
+                <section
+                    class="game-sidebar-card emotion-insights-card"
+                    aria-labelledby="emotion-insights-title"
+                >
+
+                    <div class="game-sidebar-header">
+
+                        <div class="game-sidebar-icon">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                        </div>
+
+
+                        <h2 id="emotion-insights-title">
+                            Emotion Insights
+                        </h2>
+
+
+                        <span class="sidebar-live-badge">
+
+                            <i></i>
+
+                            Live
+
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Focus -->
+
+                    <div class="insight-row">
+
+                        <div class="insight-label">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                            <span>
+                                Focus
+                            </span>
+
+                        </div>
+
+
+                        <div class="insight-progress">
+
+                            <div
+                                class="insight-progress-fill insight-focus-fill"
+                            ></div>
+
+                        </div>
+
+
+                        <span class="insight-level high-level">
+                            High
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Stress -->
+
+                    <div class="insight-row">
+
+                        <div class="insight-label">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                            <span>
+                                Stress
+                            </span>
+
+                        </div>
+
+
+                        <div class="insight-progress">
+
+                            <div
+                                class="insight-progress-fill insight-stress-fill"
+                            ></div>
+
+                        </div>
+
+
+                        <span class="insight-level low-level">
+                            Low
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Engagement -->
+
+                    <div class="insight-row">
+
+                        <div class="insight-label">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                            <span>
+                                Engagement
+                            </span>
+
+                        </div>
+
+
+                        <div class="insight-progress">
+
+                            <div
+                                class="insight-progress-fill insight-engagement-fill"
+                            ></div>
+
+                        </div>
+
+
+                        <span class="insight-level high-level">
+                            High
+                        </span>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             AI TIP
+        =================================================== -->
+
+        <section class="game-ai-tip-section">
+
+            <div class="game-ai-tip">
+
+                <div class="game-ai-tip-icon">
+
+                    <i class="fa-regular fa-lightbulb"></i>
+
+                </div>
+
+
+                <div class="game-ai-tip-title">
+
+                    <h2>
+                        AI Tip
+                    </h2>
+
+                </div>
+
+
+                <p id="game-ai-tip-text">
+
+                    Keep your focus steady and avoid
+                    distractions for a higher score!
+
+                </p>
+
+
+                <i
+                    class="fa-solid fa-wand-magic-sparkles ai-tip-sparkle"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             GAME ACTIONS
+        =================================================== -->
+
+        <section class="game-actions-section">
+
+
+            <div class="game-actions">
+
+
+                <!-- Pause -->
+
+                <button
+                    type="button"
+                    class="game-action-button pause-button"
+                    id="pause-game-button"
+                >
+
+                    <i class="fa-solid fa-pause"></i>
+
+                    <span>
+                        Pause
+                    </span>
+
+                </button>
+
+
+
+                <!-- Restart -->
+
+                <button
+                    type="button"
+                    class="game-action-button restart-button"
+                    id="restart-game-button"
+                >
+
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                    <span>
+                        Restart Game
+                    </span>
+
+                </button>
+
+
+
+                <!-- Exit -->
+
+                <a
+                    href="game-library.html"
+                    class="game-action-button exit-button"
+                    id="exit-game-button"
+                >
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    <span>
+                        Exit Game
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Session progress -->
+
+            <div class="session-progress-row">
+
+                <span>
+                    Session Progress
+                </span>
+
+
+                <div class="session-progress">
+
+                    <div
+                        class="session-progress-fill"
+                        id="session-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <strong id="session-level">
+                    Level 1 / 5
+                </strong>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SESSION SUMMARY CTA
+        =================================================== -->
+
+        <section class="session-summary-cta-section">
+
+            <div class="session-summary-cta">
+
+
+                <div class="session-summary-icon">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                </div>
+
+
+                <div class="session-summary-content">
+
+                    <h2 id="session-summary-title">
+                        Great Focus!
+                        You're in the Flow Zone.
+                    </h2>
+
+                    <p id="session-summary-message">
+                        Keep going — your game,
+                        your rhythm, your growth.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="session-summary.html"
+                    class="view-summary-button"
+                >
+
+                    <span>
+                        View Session Summary
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <a
+                    href="landing.html"
+                    class="footer-brand-logo"
+                >
+
+                    <img
+                        src="../assets/images/logo.png"
+                        alt="EmotiCore Logo"
+                    >
+
+                    <span>
+                        EmotiCore
+                    </span>
+
+                </a>
+
+
+                <p>
+                    Powered by
+                    <span>Emotion.</span><br>
+
+                    Driven by
+                    <span>AI.</span>
+                </p>
+
+
+                <div class="footer-social-links">
+
+                    <a
+                        href="#"
+                        aria-label="Discord"
+                    >
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                    >
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="landing.html">
+                    Home
+                </a>
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="emotion-engine.html">
+                    Emotion Engine
+                </a>
+
+                <a href="game-library.html">
+                    Game Arena
+                </a>
+
+            </div>
+
+
+
+            <!-- Resources -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Resources
+                </h3>
+
+                <a href="#">
+                    Documentation
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms of Use
+                </a>
+
+                <a href="#">
+                    Support
+                </a>
+
+            </div>
+
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    Feedback
+                </a>
+
+                <a href="#">
+                    Report an Issue
+                </a>
+
+            </div>
+
+
+
+            <!-- Stay Connected -->
+
+            <div class="footer-column newsletter-column">
+
+                <h3>
+                    Stay Connected
+                </h3>
+
+                <p>
+                    Be the first to know about
+                    new updates & features.
+                </p>
+
+
+                <form
+                    action="#"
+                    method="post"
+                    class="newsletter-form"
+                >
+
+                    <input
+                        type="email"
+                        name="newsletter-email"
+                        placeholder="Enter your email"
+                        aria-label="Enter your email"
+                    >
+
+
+                    <button
+                        type="submit"
+                        aria-label="Subscribe"
+                    >
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EmotiCore.
+                All rights reserved.
+            </p>
+
+
+            <p>
+                Crafted with
+                <span>♥</span>
+                by Team Emotion Raiders
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

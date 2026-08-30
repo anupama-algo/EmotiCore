@@ -1,0 +1,3187 @@
+/* =========================================================
+   EMOTICORE - RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .main-navigation {
+        gap: 18px;
+    }
+
+
+    .nav-link {
+        font-size: 11px;
+    }
+
+
+    .login-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+
+    .journey-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 20px;
+    }
+
+
+    .testimonial-card {
+        grid-template-columns:
+            auto 1fr;
+
+        gap: 15px;
+    }
+
+
+    .testimonial-action {
+        justify-self: start;
+    }
+
+
+    .community-info {
+        justify-self: end;
+    }
+
+
+    .testimonial-indicators {
+        grid-column: 1 / -1;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+}
+
+
+/* =========================
+   TABLET / SMALL LAPTOP
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    .header-container {
+        padding:
+            10px 14px;
+    }
+
+
+    .main-navigation {
+        gap: 13px;
+    }
+
+
+    .back-home-button span {
+        display: none;
+    }
+
+
+    .back-home-button {
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border-radius: 12px;
+    }
+
+
+    .login-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .login-introduction {
+        max-width: 700px;
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+    .login-panel {
+        max-width: 700px;
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+
+    .intro-content {
+        text-align: center;
+    }
+
+
+    .intro-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .ai-message {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .login-illustration {
+        height: 340px;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding:
+            10px;
+    }
+
+
+    .header-container {
+        min-height: 65px;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        padding:
+            9px 12px;
+    }
+
+
+    .brand-information p {
+        display: none;
+    }
+
+
+    .brand-information h1 {
+        font-size: 17px;
+    }
+
+
+    .brand-logo-image {
+        width: 43px;
+        height: 43px;
+    }
+
+
+    .main-navigation {
+
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        gap: 18px;
+
+        padding:
+            3px 3px 5px;
+    }
+
+
+    .main-navigation::-webkit-scrollbar {
+        height: 3px;
+    }
+
+
+    .main-navigation::-webkit-scrollbar-thumb {
+        background: #dcdff0;
+        border-radius: 10px;
+    }
+
+
+    .nav-link {
+        white-space: nowrap;
+
+        font-size: 10px;
+    }
+
+
+    .back-home-button {
+
+        margin-left: auto;
+    }
+
+
+    .login-page {
+        padding:
+            28px 15px 35px;
+    }
+
+
+    .intro-logo-text {
+        font-size: 45px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .intro-welcome {
+        font-size: 20px;
+    }
+
+
+    .intro-description {
+        font-size: 13px;
+    }
+
+
+    .login-illustration {
+        height: 290px;
+    }
+
+
+    .illustration-glow {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .floating-element {
+        width: 40px;
+        height: 40px;
+
+        font-size: 16px;
+    }
+
+
+    .floating-chart {
+        left: 4px;
+    }
+
+
+    .floating-heart {
+        right: 20px;
+    }
+
+
+    .floating-gamepad {
+        right: 0;
+    }
+
+
+    .floating-bolt {
+        left: 0;
+    }
+
+
+    .journey-card,
+    .auth-card,
+    .security-card {
+        padding: 20px;
+    }
+
+
+    .journey-grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .social-login {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .testimonial-card {
+        grid-template-columns:
+            1fr;
+
+        text-align: center;
+    }
+
+
+    .testimonial-avatar {
+        margin:
+            0 auto;
+    }
+
+
+    .testimonial-action,
+    .community-info {
+        justify-self: center;
+    }
+
+
+    .testimonial-text blockquote {
+        font-size: 11px;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 7px;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .header-container {
+        border-radius: 15px;
+    }
+
+
+    .brand-logo {
+        gap: 7px;
+    }
+
+
+    .brand-logo-image {
+        width: 39px;
+        height: 39px;
+    }
+
+
+    .brand-information h1 {
+        font-size: 15px;
+    }
+
+
+    .back-home-button {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .nav-link {
+        font-size: 9px;
+    }
+
+
+    .login-page {
+        padding:
+            20px 12px 30px;
+    }
+
+
+    .intro-content {
+        padding:
+            15px 5px 0;
+    }
+
+
+    .intro-welcome {
+        font-size: 18px;
+    }
+
+
+    .intro-logo-text {
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .intro-description {
+        font-size: 12px;
+    }
+
+
+    .ai-message {
+        font-size: 9px;
+
+        padding:
+            8px 10px;
+    }
+
+
+    .login-illustration {
+        height: 240px;
+    }
+
+
+    .login-hero-image {
+        width: 100%;
+    }
+
+
+    .illustration-glow {
+        width: 205px;
+        height: 205px;
+    }
+
+
+    .floating-element {
+        width: 35px;
+        height: 35px;
+
+        font-size: 14px;
+    }
+
+
+    .journey-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .auth-card {
+        padding: 17px;
+    }
+
+
+    .auth-tab {
+        font-size: 12px;
+    }
+
+
+    .auth-heading h2 {
+        font-size: 18px;
+    }
+
+
+    .form-options {
+        align-items: flex-start;
+    }
+
+
+    .forgot-password {
+        white-space: nowrap;
+    }
+
+
+    .security-card {
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .security-icon {
+        width: 52px;
+        height: 52px;
+
+        font-size: 23px;
+    }
+
+
+    .security-content h3 {
+        font-size: 12px;
+    }
+
+
+    .security-content p {
+        font-size: 9px;
+    }
+
+
+    .testimonial-card {
+        padding:
+            20px 15px;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .footer-bottom {
+        font-size: 7px;
+    }
+}
+
+/* =========================================================
+   EMOTICORE - RESPONSIVE STYLES
+   ========================================================= */
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .main-navigation {
+        gap: 18px;
+    }
+
+
+    .hero-container {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 25px;
+    }
+
+
+    .hero-content {
+        grid-column: 1;
+    }
+
+
+    .hero-visual {
+        grid-column: 2;
+    }
+
+
+    .hero-emotion-panel {
+        grid-column: 1 / -1;
+
+        flex-direction: row;
+    }
+
+
+    .emotion-feed-card,
+    .current-state-card {
+        flex: 1;
+    }
+
+
+    .benefits-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .process-flow {
+        flex-wrap: wrap;
+    }
+
+
+    .process-arrow {
+        display: none;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+}
+
+
+/* =========================
+   SMALL LAPTOP / TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .main-navigation {
+        gap: 13px;
+    }
+
+
+    .nav-link {
+        font-size: 10px;
+    }
+
+
+    .launch-arena-button {
+        padding:
+            11px 13px;
+    }
+
+
+    .hero-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+
+    .hero-content,
+    .hero-visual,
+    .hero-emotion-panel {
+        grid-column: 1;
+    }
+
+
+    .hero-content {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-visual {
+        min-height: 400px;
+    }
+
+
+    .hero-emotion-panel {
+        flex-direction: row;
+
+        width: 100%;
+    }
+
+
+    .hero-feature-strip {
+        justify-content: center;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        padding:
+            10px;
+    }
+
+
+    .header-container {
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        padding:
+            9px 12px;
+    }
+
+
+    .brand-logo-image {
+        width: 43px;
+        height: 43px;
+    }
+
+
+    .brand-information h1 {
+        font-size: 17px;
+    }
+
+
+    .brand-information p {
+        display: none;
+    }
+
+
+    .main-navigation {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        gap: 18px;
+
+        padding:
+            3px 3px 5px;
+    }
+
+
+    .main-navigation::-webkit-scrollbar {
+        height: 3px;
+    }
+
+
+    .main-navigation::-webkit-scrollbar-thumb {
+        background: #dcdff0;
+
+        border-radius: 10px;
+    }
+
+
+    .nav-link {
+        white-space: nowrap;
+
+        font-size: 10px;
+    }
+
+
+    .hero-container {
+        padding:
+            35px 15px
+            45px;
+    }
+
+
+    .hero-title {
+        font-size: 45px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+
+    .hero-actions {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .hero-feature-strip {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .hero-mini-feature {
+        padding:
+            0 5px;
+    }
+
+
+    .hero-mini-feature span {
+        display: none;
+    }
+
+
+    .hero-visual {
+        min-height: 330px;
+    }
+
+
+    .hero-character {
+        width: 270px;
+        height: 270px;
+    }
+
+
+    .hero-glow {
+        width: 290px;
+        height: 290px;
+    }
+
+
+    .floating-visual-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 16px;
+    }
+
+
+    .gamepad-floating {
+        left: 8px;
+    }
+
+
+    .heart-floating {
+        right: 8px;
+    }
+
+
+    .bolt-floating {
+        right: 8px;
+        bottom: 45px;
+    }
+
+
+    .hero-emotion-panel {
+        flex-direction: column;
+    }
+
+
+    .section-title {
+        font-size: 25px;
+    }
+
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .benefit-card {
+        min-height: auto;
+    }
+
+
+    .process-flow {
+        gap: 25px;
+    }
+
+
+    .process-step {
+        width: 145px;
+    }
+
+
+    .stats-container {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 20px;
+    }
+
+
+    .stat-divider {
+        display: none;
+    }
+
+
+    .cta-container {
+        flex-wrap: wrap;
+
+        gap: 16px;
+
+        padding:
+            18px;
+    }
+
+
+    .cta-visual {
+        width: 85px;
+    }
+
+
+    .cta-content {
+        min-width: 200px;
+    }
+
+
+    .cta-button {
+        margin-left: auto;
+    }
+
+
+    .footer-container {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 7px;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .launch-arena-button {
+        width: 40px;
+        height: 40px;
+
+        padding: 0;
+
+        border-radius: 11px;
+    }
+
+
+    .launch-arena-button span {
+        display: none;
+    }
+
+
+    .hero-title {
+        font-size: 39px;
+    }
+
+
+    .hero-badge {
+        text-align: center;
+
+        font-size: 8px;
+    }
+
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+
+    .hero-actions {
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+
+    .hero-feature-strip {
+        padding:
+            9px 7px;
+    }
+
+
+    .hero-mini-feature {
+        gap: 5px;
+    }
+
+
+    .hero-mini-feature strong {
+        font-size: 7px;
+    }
+
+
+    .hero-character {
+        width: 235px;
+        height: 235px;
+    }
+
+
+    .hero-glow {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .floating-visual-icon {
+        width: 34px;
+        height: 34px;
+
+        font-size: 14px;
+    }
+
+
+    .emotion-feed-card,
+    .current-state-card {
+        padding: 15px;
+    }
+
+
+    .state-information h3 {
+        font-size: 16px;
+    }
+
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .stat-item {
+        justify-content: flex-start;
+    }
+
+
+    .cta-container {
+        text-align: center;
+
+        justify-content: center;
+    }
+
+
+    .cta-visual {
+        display: none;
+    }
+
+
+    .cta-content {
+        min-width: 100%;
+    }
+
+
+    .cta-content h2 {
+        font-size: 18px;
+
+        text-align: center;
+    }
+
+
+    .cta-content p {
+        text-align: center;
+    }
+
+
+    .cta-button {
+        margin: 0 auto;
+    }
+
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   EMOTICORE - DASHBOARD RESPONSIVE
+   ========================================================= */
+
+
+/* =========================
+   LARGE TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .dashboard-floating-icon {
+        display: none;
+    }
+
+    .emotion-metrics-section {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .dashboard-recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recommended-game-card,
+    .ai-recommendation-card {
+        width: 100%;
+    }
+
+    .player-state-content {
+        grid-template-columns:
+            1fr;
+
+        gap: 20px;
+    }
+
+    .state-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .player-state-visual {
+        min-height: 210px;
+    }
+
+    .recent-activity {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .dashboard-hero {
+        min-height: 215px;
+
+        padding-top: 35px;
+    }
+
+    .dashboard-hero h2 {
+        font-size: 43px;
+    }
+
+    .current-emotion-content {
+        grid-template-columns:
+            0.85fr 1.15fr;
+    }
+
+    .dashboard-character {
+        height: 170px;
+    }
+
+    .dashboard-character img {
+        height: 175px;
+    }
+
+    .emotion-state-content h3 {
+        font-size: 24px;
+    }
+
+    .emotion-metrics-section {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .stats-container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .dashboard-hero {
+        padding:
+            30px
+            15px
+            22px;
+    }
+
+    .dashboard-hero h2 {
+        font-size: 37px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .dashboard-hero-content > p {
+        font-size: 11px;
+    }
+
+    .current-emotion-section {
+        padding:
+            0
+            15px
+            20px;
+    }
+
+    .current-emotion-card {
+        padding:
+            17px;
+    }
+
+    .emotion-card-title {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .emotion-title-left h2 {
+        font-size: 18px;
+    }
+
+    .live-analysis-badge {
+        font-size: 7px;
+    }
+
+    .current-emotion-content {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        text-align: center;
+    }
+
+    .dashboard-character {
+        height: 190px;
+    }
+
+    .dashboard-character img {
+        height: 190px;
+    }
+
+    .emotion-state-content {
+        justify-content: center;
+
+        text-align: left;
+
+        padding:
+            10px
+            5px
+            5px;
+    }
+
+    .emotion-state-content h3 {
+        font-size: 22px;
+    }
+
+    .emotion-state-content p {
+        font-size: 10px;
+    }
+
+    .emotion-metrics-section {
+        grid-template-columns:
+            1fr 1fr;
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .emotion-metric-card {
+        min-height: 135px;
+    }
+
+    .dashboard-recommendation-grid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .recommended-game-content {
+        grid-template-columns: 120px 1fr;
+    }
+
+    .recommended-game-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .recommended-game-info h3 {
+        font-size: 16px;
+    }
+
+    .recommended-game-info > p {
+        font-size: 9px;
+    }
+
+    .ai-recommendation-content {
+        padding: 18px;
+    }
+
+    .ai-recommendation-content p {
+        font-size: 11px;
+    }
+
+    .player-state-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .player-state-card {
+        padding: 17px;
+    }
+
+    .dashboard-card-header {
+        align-items: flex-start;
+    }
+
+    .card-heading-left h2 {
+        font-size: 15px;
+    }
+
+    .adapting-badge {
+        font-size: 7px;
+    }
+
+    .activity-item {
+        grid-template-columns:
+            34px
+            1fr
+            auto;
+    }
+
+    .dashboard-cta-section {
+        padding:
+            15px
+            15px
+            40px;
+    }
+
+    .dashboard-cta-button {
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 58px;
+
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-hero h2 {
+        font-size: 32px;
+    }
+
+    .dashboard-badge {
+        font-size: 8px;
+    }
+
+    .emotion-metrics-section {
+        grid-template-columns: 1fr;
+    }
+
+    .emotion-metric-card {
+        min-height: 120px;
+    }
+
+    .recommended-game-content {
+        grid-template-columns: 1fr;
+    }
+
+    .recommended-game-image {
+        width: 100%;
+        height: 170px;
+    }
+
+    .play-game-button {
+        min-height: 42px;
+    }
+
+    .ai-recommendation-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .state-information h3 {
+        font-size: 16px;
+    }
+
+    .recent-activity {
+        overflow-x: hidden;
+    }
+
+    .activity-item time {
+        font-size: 7px;
+    }
+
+    .dashboard-cta-button {
+        font-size: 14px;
+    }
+
+    .dashboard-cta-tagline {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================
+   EMOTICORE - ANALYTICS RESPONSIVE
+   ========================================================= */
+
+
+/* =========================
+   TABLET / SMALL LAPTOP
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .analytics-floating-icon {
+        display: none;
+    }
+
+    .overview-metrics {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .analytics-charts-section {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-lower-grid {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+    .best-game-card {
+        grid-column: 1 / -1;
+    }
+
+    .ai-insights-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .analytics-hero {
+        min-height: 205px;
+
+        padding-top: 30px;
+    }
+
+    .analytics-hero h2 {
+        font-size: 45px;
+    }
+
+    .overview-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .time-filter {
+        align-self: flex-end;
+    }
+
+    .analytics-lower-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .best-game-card {
+        grid-column: auto;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .analytics-back-button span {
+        display: none;
+    }
+
+    .analytics-back-button {
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border-radius: 12px;
+    }
+
+    .analytics-hero {
+        padding:
+            28px 15px
+            20px;
+    }
+
+    .analytics-hero h2 {
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .analytics-hero-content > p {
+        font-size: 11px;
+    }
+
+    .gaming-overview-section,
+    .analytics-charts-section,
+    .analytics-lower-grid,
+    .ai-insights-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .gaming-overview-card {
+        padding: 16px;
+    }
+
+    .overview-metrics {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+    .overview-metric-information > strong {
+        font-size: 21px;
+    }
+
+    .analytics-card-header {
+        align-items: flex-start;
+    }
+
+    .chart-legend {
+        flex-wrap: wrap;
+
+        justify-content: flex-end;
+    }
+
+    .analytics-chart-card {
+        padding: 15px;
+    }
+
+    .emotion-trends-chart {
+        padding-left: 35px;
+    }
+
+    .chart-grid {
+        left: 35px;
+    }
+
+    .chart-placeholder {
+        left: 35px;
+    }
+
+    .performance-bars {
+        left: 35px;
+    }
+
+    .performance-x-axis {
+        left: 35px;
+    }
+
+    .current-score-label {
+        right: 3px;
+    }
+
+    .best-game-content {
+        grid-template-columns:
+            90px
+            1fr;
+    }
+
+    .ai-insights-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .powered-by-ai {
+        align-self: flex-end;
+    }
+
+    .analytics-cta-section {
+        margin:
+            0 15px
+            30px;
+
+        padding:
+            20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .analytics-cta-content {
+        align-items: flex-start;
+    }
+
+    .analytics-cta-content h2 {
+        font-size: 17px;
+    }
+
+    .analytics-cta-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .analytics-hero h2 {
+        font-size: 32px;
+    }
+
+    .analytics-badge {
+        font-size: 8px;
+    }
+
+    .overview-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-metric-card {
+        min-height: 100px;
+    }
+
+    .time-filter {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .time-filter-button {
+        flex: 1;
+
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .analytics-card-title h2 {
+        font-size: 15px;
+    }
+
+    .chart-legend span {
+        font-size: 7px;
+    }
+
+    .analytics-small-card {
+        padding: 14px;
+    }
+
+    .played-game-item {
+        grid-template-columns:
+            22px
+            42px
+            1fr
+            auto;
+    }
+
+    .played-game-item img {
+        width: 42px;
+        height: 40px;
+    }
+
+    .best-game-content {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .best-game-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .best-game-information h3 {
+        font-size: 15px;
+    }
+
+    .best-game-stats {
+        gap: 5px;
+    }
+
+    .best-game-stat {
+        padding:
+            8px 3px;
+    }
+
+    .ai-insights-grid {
+        gap: 12px;
+    }
+
+    .key-insights-card,
+    .growth-recommendation-card {
+        padding: 14px;
+    }
+
+    .analytics-cta-content p {
+        font-size: 8px;
+    }
+
+    .analytics-cta-button {
+        font-size: 9px;
+    }
+}
+
+/* =========================================================
+   EMOTICORE - GAME LIBRARY RESPONSIVE
+   ========================================================= */
+
+
+/* =========================
+   TABLET / SMALL LAPTOP
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .game-library-floating-icon {
+        display: none;
+    }
+
+    .player-state-banner {
+        grid-template-columns:
+            150px
+            1fr
+            350px;
+    }
+
+    .recommended-game-panel {
+        grid-template-columns:
+            180px
+            1fr
+            230px;
+    }
+
+    .recommended-library-image {
+        width: 180px;
+        height: 125px;
+    }
+
+    .gaming-stats-card {
+        grid-template-columns:
+            1.2fr
+            1fr
+            1fr
+            1fr;
+    }
+
+    .view-analytics-button {
+        grid-column: 1 / -1;
+
+        width: 150px;
+
+        justify-self: end;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .game-library-hero {
+        min-height: 200px;
+    }
+
+    .game-library-hero h2 {
+        font-size: 44px;
+    }
+
+    .player-state-banner {
+        grid-template-columns:
+            150px
+            1fr;
+    }
+
+    .player-state-metrics {
+        grid-column: 1 / -1;
+    }
+
+    .recommended-game-panel {
+        grid-template-columns:
+            190px
+            1fr;
+    }
+
+    .recommended-library-image {
+        width: 190px;
+        height: 130px;
+    }
+
+    .game-match-section {
+        grid-column: 1 / -1;
+
+        padding:
+            15px
+            0
+            0;
+
+        border-left: none;
+
+        border-top:
+            1px solid #dccffb;
+    }
+
+    .match-score-row {
+        display: flex;
+    }
+
+    .recommended-play-button {
+        max-width: 300px;
+    }
+
+    .game-category-list {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .games-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .gaming-stats-card {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .gaming-stat {
+        border-left: none;
+
+        border-top:
+            1px solid #e1dff0;
+
+        padding-top: 10px;
+    }
+
+    .gaming-stats-introduction {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .game-arena-back-button span {
+        display: none;
+    }
+
+    .game-arena-back-button {
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border-radius: 12px;
+    }
+
+    .game-library-hero {
+        padding:
+            28px
+            15px
+            20px;
+    }
+
+    .game-library-hero h2 {
+        font-size: 37px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .game-library-hero-content > p {
+        font-size: 11px;
+    }
+
+    .player-state-banner-section,
+    .ai-recommended-section,
+    .game-categories-section,
+    .explore-games-section,
+    .gaming-stats-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .player-state-banner {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding:
+            15px;
+    }
+
+    .player-state-character {
+        height: 155px;
+    }
+
+    .player-state-character img {
+        height: 160px;
+    }
+
+    .player-state-heading {
+        justify-content: center;
+    }
+
+    .player-state-information h3 {
+        font-size: 23px;
+    }
+
+    .player-state-information > p {
+        font-size: 9px;
+    }
+
+    .player-state-metrics {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        width: 100%;
+    }
+
+    .player-state-metric {
+        padding: 9px;
+    }
+
+    .player-state-metric strong {
+        font-size: 17px;
+    }
+
+    .game-section-header {
+        align-items: flex-start;
+    }
+
+    .game-section-title h2 {
+        font-size: 16px;
+    }
+
+    .recommended-game-panel {
+        grid-template-columns: 1fr;
+
+        padding: 12px;
+    }
+
+    .recommended-library-image {
+        width: 100%;
+        height: 175px;
+    }
+
+    .recommended-title-row h3 {
+        font-size: 21px;
+    }
+
+    .game-match-section {
+        padding-top: 14px;
+    }
+
+    .game-category-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .games-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .game-card-image {
+        height: 185px;
+    }
+
+    .gaming-stats-card {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .gaming-stats-introduction {
+        grid-column: 1 / -1;
+    }
+
+    .view-analytics-button {
+        grid-column: 1 / -1;
+
+        width: 100%;
+    }
+
+    .game-library-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 22px;
+    }
+
+    .game-library-cta-content h2 {
+        font-size: 18px;
+    }
+
+    .game-library-cta-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .game-library-hero h2 {
+        font-size: 31px;
+    }
+
+    .game-library-badge {
+        font-size: 8px;
+    }
+
+    .player-state-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .player-state-metric {
+        min-height: 75px;
+    }
+
+    .game-category-list {
+        grid-template-columns: 1fr;
+    }
+
+    .game-category {
+        min-height: 42px;
+    }
+
+    .game-card-image {
+        height: 160px;
+    }
+
+    .game-card-content h3 {
+        font-size: 17px;
+    }
+
+    .game-meta {
+        gap: 12px;
+    }
+
+    .gaming-stats-card {
+        grid-template-columns: 1fr;
+    }
+
+    .gaming-stat {
+        justify-content: flex-start;
+    }
+
+    .gaming-stats-introduction {
+        justify-content: flex-start;
+    }
+
+    .game-library-cta {
+        text-align: center;
+
+        align-items: center;
+    }
+
+    .game-library-cta-content h2 {
+        font-size: 17px;
+    }
+
+    .game-library-cta-content p {
+        font-size: 8px;
+    }
+
+    .smart-games-tagline {
+        font-size: 8px;
+    }
+}
+
+/* =========================================================
+   ADAPTIVE GAMEPLAY RESPONSIVE
+   ========================================================= */
+
+
+/* =========================
+   LARGE TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .game-session-floating-icon {
+        display: none;
+    }
+
+    .game-session-layout {
+        grid-template-columns:
+            1fr;
+    }
+
+    .game-session-sidebar {
+        display: grid;
+
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+    .emotion-insights-card {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .game-session-hero {
+        min-height: 195px;
+    }
+
+    .game-session-hero h2 {
+        font-size: 45px;
+    }
+
+    .game-session-layout {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .game-canvas-wrapper {
+        min-height: 340px;
+    }
+
+    .game-session-sidebar {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+    .emotion-insights-card {
+        grid-column: 1 / -1;
+    }
+
+    .session-stat strong {
+        font-size: 18px;
+    }
+
+    .game-ai-tip p {
+        font-size: 11px;
+    }
+
+    .session-summary-cta-content h2 {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .game-session-back-button span {
+        display: none;
+    }
+
+    .game-session-back-button {
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border-radius: 12px;
+    }
+
+    .game-session-hero {
+        padding:
+            27px
+            15px
+            20px;
+    }
+
+    .game-session-hero h2 {
+        font-size: 38px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .game-session-hero-content > p {
+        font-size: 10px;
+    }
+
+    .game-session-layout {
+        grid-template-columns: 1fr;
+
+        padding:
+            0 15px
+            20px;
+    }
+
+    .game-screen-card {
+        padding: 13px;
+    }
+
+    .game-screen-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .game-difficulty-badge {
+        align-self: flex-end;
+    }
+
+    .game-canvas-wrapper {
+        min-height: 0;
+
+        aspect-ratio: 4 / 3;
+    }
+
+    .game-start-button {
+        min-width: 190px;
+
+        min-height: 47px;
+
+        font-size: 14px;
+    }
+
+    .game-session-sidebar {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .game-session-stats {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        margin-top: 0;
+    }
+
+    .session-stat {
+        min-height: 75px;
+    }
+
+    .session-stat:nth-child(2)::after {
+        display: none;
+    }
+
+    .session-stat:nth-child(1),
+    .session-stat:nth-child(2) {
+        border-bottom:
+            1px solid #e2dbf0;
+    }
+
+    .session-stat:not(:last-child)::after {
+        height: 35px;
+    }
+
+    .game-controls-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .control-card {
+        min-height: 95px;
+    }
+
+    .game-ai-tip {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+
+        padding: 13px;
+    }
+
+    .game-ai-tip p {
+        flex-basis: 100%;
+
+        font-size: 10px;
+    }
+
+    .game-actions-section {
+        padding:
+            0
+            15px
+            22px;
+    }
+
+    .game-actions {
+        grid-template-columns:
+            1fr;
+    }
+
+    .session-progress-row {
+        grid-template-columns:
+            1fr;
+
+        gap: 7px;
+
+        text-align: left;
+    }
+
+    .session-progress-row > strong {
+        text-align: left;
+    }
+
+    .session-summary-cta-section {
+        padding:
+            0
+            15px
+            30px;
+    }
+
+    .session-summary-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+    }
+
+    .view-summary-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .game-session-hero h2 {
+        font-size: 32px;
+    }
+
+    .game-session-badge {
+        font-size: 8px;
+    }
+
+    .game-screen-title h2 {
+        font-size: 17px;
+    }
+
+    .game-screen-title .game-tags {
+        width: 100%;
+    }
+
+    .game-canvas-wrapper {
+        aspect-ratio: 1 / 1;
+
+        border-radius: 14px;
+    }
+
+    .game-hud {
+        top: 9px;
+        left: 9px;
+        right: 9px;
+    }
+
+    .game-lives,
+    .game-score {
+        min-width: 52px;
+
+        padding:
+            7px
+            9px;
+    }
+
+    .game-lives {
+        font-size: 14px;
+    }
+
+    .game-lives span {
+        font-size: 12px;
+    }
+
+    .game-score span {
+        font-size: 7px;
+    }
+
+    .game-score strong {
+        font-size: 15px;
+    }
+
+    .game-start-button {
+        width: 82%;
+    }
+
+    .sidebar-current-state {
+        padding: 10px;
+    }
+
+    .sidebar-current-state h3 {
+        font-size: 14px;
+    }
+
+    .game-sidebar-header h2 {
+        font-size: 13px;
+    }
+
+    .game-session-stats {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .session-stat {
+        min-height: 69px;
+    }
+
+    .session-stat-icon {
+        width: 33px;
+        height: 33px;
+
+        font-size: 13px;
+    }
+
+    .session-stat strong {
+        font-size: 16px;
+    }
+
+    .session-stat span {
+        font-size: 7px;
+    }
+
+    .game-ai-tip-title h2 {
+        font-size: 15px;
+    }
+
+    .game-ai-tip p {
+        font-size: 9px;
+    }
+
+    .session-summary-content h2 {
+        font-size: 17px;
+    }
+
+    .session-summary-content p {
+        font-size: 8px;
+    }
+}
+
+/* =========================================================
+   SESSION SUMMARY RESPONSIVE
+   ========================================================= */
+
+
+/* =========================
+   LARGE TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .summary-floating-icon {
+        display: none;
+    }
+
+    .session-game-overview-card {
+        grid-template-columns:
+            185px
+            1fr
+            135px;
+    }
+
+    .session-game-image {
+        width: 185px;
+        height: 170px;
+    }
+
+    .session-performance-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .summary-recommendation-content {
+        grid-template-columns:
+            180px
+            1fr;
+    }
+
+    .summary-recommendation-image {
+        width: 180px;
+        height: 140px;
+    }
+
+    .why-this-game {
+        grid-column: 1 / -1;
+
+        border-left: none;
+
+        border-top:
+            1px solid #d8c9f8;
+
+        border-radius:
+            14px;
+
+        margin-top: 5px;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .session-summary-hero {
+        min-height: 190px;
+    }
+
+    .session-summary-hero h2 {
+        font-size: 46px;
+    }
+
+    .session-game-overview-card {
+        grid-template-columns:
+            160px
+            1fr;
+    }
+
+    .session-game-image {
+        width: 160px;
+        height: 160px;
+    }
+
+    .session-performance-badge {
+        grid-column: 1 / -1;
+
+        width: fit-content;
+
+        justify-self: end;
+    }
+
+    .summary-analysis-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .summary-recommendation-content {
+        grid-template-columns:
+            170px
+            1fr;
+    }
+
+    .summary-recommendation-image {
+        width: 170px;
+        height: 135px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .session-summary-back-button span {
+        display: none;
+    }
+
+    .session-summary-back-button {
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border-radius: 12px;
+    }
+
+    .session-summary-hero {
+        padding:
+            28px
+            15px
+            20px;
+    }
+
+    .session-summary-hero h2 {
+        font-size: 39px;
+
+        letter-spacing: -1.5px;
+    }
+
+    .session-summary-hero-content > p {
+        font-size: 10px;
+    }
+
+    .session-game-overview-section,
+    .summary-analysis-grid,
+    .summary-recommendation-section,
+    .summary-action-section,
+    .summary-growth-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .session-game-overview-card {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding: 17px;
+    }
+
+    .session-game-image {
+        width: 100%;
+        height: 190px;
+    }
+
+    .session-game-title-row {
+        justify-content: center;
+    }
+
+    .session-game-details > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .session-performance-stats {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        text-align: left;
+    }
+
+    .session-performance-badge {
+        justify-self: center;
+    }
+
+    .summary-card-header {
+        align-items: flex-start;
+    }
+
+    .journey-legend {
+        gap: 8px;
+    }
+
+    .journey-metric-row {
+        grid-template-columns:
+            105px
+            42px
+            1fr
+            42px;
+
+        gap: 5px;
+    }
+
+    .journey-metric-name {
+        font-size: 8px;
+    }
+
+    .journey-metric-icon {
+        width: 28px;
+        height: 28px;
+
+        font-size: 11px;
+    }
+
+    .summary-main-insight {
+        align-items: flex-start;
+    }
+
+    .summary-recommendation-content {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-recommendation-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .summary-recommendation-title {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .summary-recommendation-details > p {
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .why-this-game {
+        margin-top: 8px;
+    }
+
+    .summary-action-section {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-growth-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding:
+            20px;
+    }
+
+    .full-analytics-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .session-summary-hero h2 {
+        font-size: 33px;
+    }
+
+    .session-summary-badge {
+        font-size: 8px;
+    }
+
+    .session-game-title-row h2 {
+        font-size: 20px;
+    }
+
+    .session-performance-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .session-performance-card {
+        min-height: 70px;
+    }
+
+    .summary-heading-left h2 {
+        font-size: 15px;
+    }
+
+    .journey-legend span {
+        font-size: 7px;
+    }
+
+    .journey-metric-row {
+        grid-template-columns:
+            1fr
+            42px;
+
+        gap: 8px;
+
+        padding:
+            7px
+            0;
+    }
+
+    .journey-progress {
+        grid-column: 1 / -1;
+
+        grid-row: 2;
+    }
+
+    .journey-end-value {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .journey-start-value {
+        grid-column: 2;
+        grid-row: 1;
+        transform: translateX(-45px);
+    }
+
+    .summary-main-insight p {
+        font-size: 10px;
+    }
+
+    .summary-highlights li {
+        font-size: 9px;
+    }
+
+    .summary-recommendation-title h3 {
+        font-size: 19px;
+    }
+
+    .summary-recommendation-image {
+        height: 160px;
+    }
+
+    .summary-action-button {
+        font-size: 10px;
+    }
+
+    .summary-growth-content h2 {
+        font-size: 17px;
+    }
+
+    .summary-growth-content p {
+        font-size: 8px;
+    }
+
+    .full-analytics-button {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   EMOTICORE - EMOTION CALIBRATION RESPONSIVE
+   ========================================================= */
+
+
+/* =========================
+   LARGE TABLET
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .calibration-floating-icon {
+        display: none;
+    }
+
+    .calibration-data-left {
+        left: 8%;
+    }
+
+    .calibration-data-game {
+        right: 8%;
+    }
+
+    .calibration-data-brain {
+        left: 17%;
+    }
+
+    .calibration-data-heart {
+        right: 17%;
+    }
+
+    .calibration-analyzing-card {
+        right: 17%;
+    }
+
+    .why-calibration-card {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .calibration-hero {
+        min-height: 220px;
+    }
+
+    .calibration-hero h2 {
+        font-size: 45px;
+    }
+
+    .calibration-visual-container {
+        height: 300px;
+    }
+
+    .calibration-character {
+        height: 300px;
+    }
+
+    .calibration-character-wrapper {
+        height: 300px;
+    }
+
+    .calibration-rings {
+        width: 285px;
+        height: 285px;
+    }
+
+    .calibration-data-icon,
+    .calibration-analyzing-card {
+        transform: scale(0.88);
+    }
+
+    .calibration-steps-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .capture-cards {
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 12px;
+    }
+
+    .capture-card {
+        padding: 15px;
+    }
+
+    .why-calibration-card {
+        grid-template-columns:
+            1fr
+            0.7fr;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .calibration-back-button span {
+        display: none;
+    }
+
+    .calibration-back-button {
+        width: 42px;
+        height: 42px;
+
+        padding: 0;
+
+        border-radius: 12px;
+    }
+
+    .calibration-hero {
+        min-height: 205px;
+
+        padding:
+            28px
+            15px
+            12px;
+    }
+
+    .calibration-hero h2 {
+        font-size: 36px;
+
+        letter-spacing: -1.4px;
+    }
+
+    .calibration-hero-content > p {
+        font-size: 10px;
+    }
+
+    .calibration-visual-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .calibration-visual-container {
+        height: 275px;
+    }
+
+    .calibration-character-wrapper {
+        width: 100%;
+
+        height: 275px;
+    }
+
+    .calibration-character {
+        height: 275px;
+
+        max-width: 100%;
+    }
+
+    .calibration-rings {
+        width: 245px;
+        height: 245px;
+    }
+
+    .calibration-rings::after {
+        width: 300px;
+    }
+
+    .calibration-data-icon {
+        transform: scale(0.72);
+    }
+
+    .calibration-data-brain {
+        left: 6%;
+        top: 30px;
+    }
+
+    .calibration-data-heart {
+        right: 6%;
+        top: 32px;
+    }
+
+    .calibration-data-left {
+        left: 2%;
+        top: 105px;
+    }
+
+    .calibration-data-game {
+        right: 2%;
+        top: 108px;
+    }
+
+    .calibration-analyzing-card {
+        right: 4%;
+        top: 106px;
+
+        transform: scale(0.76);
+        transform-origin: right center;
+    }
+
+    .calibration-steps-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .calibration-steps-container {
+        overflow-x: auto;
+
+        grid-template-columns:
+            repeat(5, 125px);
+
+        justify-content: start;
+
+        gap: 5px;
+
+        padding:
+            14px
+            15px;
+
+        scrollbar-width: thin;
+    }
+
+    .calibration-step-line {
+        left: 50%;
+    }
+
+    .capture-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .capture-section-header h2 {
+        font-size: 27px;
+    }
+
+    .capture-section-header > p {
+        font-size: 9px;
+    }
+
+    .capture-cards {
+        grid-template-columns:
+            1fr;
+    }
+
+    .capture-card {
+        min-height: 155px;
+    }
+
+    .why-calibration-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .why-calibration-card {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            20px;
+
+        min-height: 280px;
+    }
+
+    .why-calibration-visual {
+        min-height: 110px;
+    }
+
+    .calibration-brain-visual {
+        width: 100px;
+        height: 100px;
+
+        left: 48%;
+
+        font-size: 42px;
+    }
+
+    .calibration-controller-visual {
+        width: 165px;
+
+        right: 2px;
+
+        bottom: -7px;
+    }
+
+    .start-calibration-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .start-calibration-button {
+        width: 100%;
+
+        min-width: 0;
+
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .calibration-hero h2 {
+        font-size: 31px;
+    }
+
+    .calibration-badge {
+        font-size: 8px;
+    }
+
+    .calibration-hero-content > p {
+        font-size: 9px;
+    }
+
+    .calibration-visual-container {
+        height: 245px;
+    }
+
+    .calibration-character-wrapper {
+        height: 245px;
+    }
+
+    .calibration-character {
+        height: 245px;
+    }
+
+    .calibration-rings {
+        width: 215px;
+        height: 215px;
+    }
+
+    .calibration-data-icon {
+        display: none;
+    }
+
+    .calibration-analyzing-card {
+        right: 50%;
+
+        transform:
+            translateX(50%)
+            scale(0.73);
+    }
+
+    .calibration-step strong {
+        font-size: 8px;
+    }
+
+    .capture-section-header h2 {
+        font-size: 24px;
+    }
+
+    .why-calibration-heading h2 {
+        font-size: 20px;
+    }
+
+    .calibration-benefits-list li {
+        font-size: 9px;
+    }
+
+    .start-calibration-button {
+        min-height: 57px;
+
+        font-size: 14px;
+    }
+
+    .calibration-privacy-note {
+        font-size: 8px;
+    }
+}
