@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Auth.css';
 
 const features = [
@@ -57,6 +58,7 @@ function GamingIllustration() {
 
 
 function LoginForm({ activeTab, setActiveTab }) {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   const [email, setEmail] = useState('');
@@ -69,14 +71,17 @@ function LoginForm({ activeTab, setActiveTab }) {
     setMessage('');
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    setMessage(
-      activeTab === 'login'
-        ? 'Login UI ready. Authentication service is not connected yet.'
-        : 'Sign-up UI ready. Authentication service is not connected yet.'
-    );
+  
+function handleSubmit(event) {
+  event.preventDefault();
+
+  if (activeTab === 'login') {
+    navigate('/calibration');
+  } else {
+    setMessage('Sign-up UI ready. Authentication service is not connected yet.');
   }
+}
+
 
   return (
     <section className="auth-form-card">
